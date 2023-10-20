@@ -860,7 +860,7 @@ msgstr "Comando di terminale utilizzato per eseguire"
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
-msgstr "Il comando installa/disinstall è aggiunto in fondo, a meno che non sia presente un %s.
+msgstr "Il comando installa/disinstall è aggiunto in fondo, a meno che non sia presente un %s."
 
 #: src/Gtk/SettingsWindow.vala:314
 #, no-c-format
