@@ -326,8 +326,7 @@ msgstr "Verifica aggiornamenti del kernel"
 #: src/Console/AppConsole.vala:38
 msgid "Check for kernel updates and send a desktop notification"
 msgstr ""
-"Verifica la disponibilità di aggiornamenti del kerneled avvisa l'utente "
-"corrente"
+"Verifica la disponibilità di aggiornamenti del kernel ed invia una notifica"
 
 #: src/Console/AppConsole.vala:39
 msgid "List the available kernels"
@@ -344,8 +343,7 @@ msgstr "Installa il kernel mainline più recente"
 #: src/Console/AppConsole.vala:42
 msgid "Install the latest mainline kernel without going to a new major version"
 msgstr ""
-"Installa l'ultimo kernel mainline senza passare ad una nuova versione "
-"principale"
+"Installa l'ultimo kernel mainline senza passare ad una nuova versione principale"
 
 #: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
 #: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
@@ -385,7 +383,7 @@ msgstr "Cancella le informazioni sui kernel disponibili dalla cache"
 msgid ""
 "Write the given include/exclude & previous-majors options to the config file"
 msgstr ""
-"Scrive le opzioni include/exclude & quelle delle versioni principali "
+"Scrive le opzioni includi/escludi e quelle delle versioni principali "
 "precedenti nel file di configurazione"
 
 #: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
@@ -459,8 +457,7 @@ msgstr ""
 
 #: src/Console/AppConsole.vala:73
 msgid "Locked kernels and the currently running kernel are ignored"
-msgstr ""
-"I kernel bloccati e il kernel attualmente in esecuzione vengono ignorati"
+msgstr "I kernel bloccati e il kernel attualmente in esecuzione vengono ignorati"
 
 #: src/Console/AppConsole.vala:83
 msgid "done"
@@ -531,11 +528,11 @@ msgstr "Nessun aggiornamento trovato"
 
 #: src/Console/AppConsole.vala:396
 msgid "notify minor releases disabled"
-msgstr ""
+msgstr "notifica dei rilasci minori disabilitata"
 
 #: src/Console/AppConsole.vala:404
 msgid "notify major releases disabled"
-msgstr "notifica release principali disabilitato"
+msgstr "notifica release principali disabilitata"
 
 #: src/Console/AppConsole.vala:408
 #, c-format
@@ -813,7 +810,7 @@ msgstr "URL del Mainline-PPA"
 
 #: src/Gtk/SettingsWindow.vala:249
 msgid "External Commands"
-msgstr "Comandi Esterno"
+msgstr "Comandi Esterni"
 
 #: src/Gtk/SettingsWindow.vala:256
 msgid "Superuser Authorization"
@@ -826,8 +823,7 @@ msgstr "Comando usato per eseguire dpkg con i permesi di root"
 #: src/Gtk/SettingsWindow.vala:280
 #, no-c-format
 msgid "The dpkg command is appended to the end, unless a %s is present."
-msgstr ""
-"Il comando dpkg è aggiunto in fondo, a meno che non sia presente un %s."
+msgstr "Il comando dpkg è aggiunto in fondo, a meno che non sia presente un %s."
 
 #: src/Gtk/SettingsWindow.vala:281
 #, no-c-format
@@ -864,7 +860,7 @@ msgstr "Comando di terminale utilizzato per eseguire"
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
-msgstr ""
+msgstr "Il comando installa/disinstall è aggiunto in fondo, a meno che non sia presente un %s."
 
 #: src/Gtk/SettingsWindow.vala:314
 #, no-c-format
@@ -903,7 +899,8 @@ msgstr "Copia"
 #: src/Gtk/TerminalWindow.vala:138
 msgid ""
 "Copies the entire output buffer, including scrollback, to the clipboard."
-msgstr "Copia l'intero buffer di output, incluso lo scrollback, negli Appunti."
+msgstr ""
+"Copia l'intero buffer di output, incluso lo scrollback, negli Appunti."
 
 #: src/Gtk/TerminalWindow.vala:145
 msgid "Cancel"
