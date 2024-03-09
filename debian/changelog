@@ -10,7 +10,7 @@ mainline (1.4.9) unstable; urgency=medium
     from https://kernel.ubuntu.com/~kernel-ppa/mainline/
     to   https://kernel.ubuntu.com/mainline/
 
- -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 16 Oct 2023 02:23:44 -0500
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 16 Oct 2023 02:22:33 -0400
 
 mainline (1.4.8) unstable; urgency=medium
 
