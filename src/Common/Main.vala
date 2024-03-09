@@ -41,7 +41,7 @@ using l.json;
 const string LOCALE_DIR = INSTALL_PREFIX + "/share/locale";
 const string APP_LIB_DIR = INSTALL_PREFIX + "/lib/" + BRANDING_SHORTNAME;
 const string CLI_EXE = BRANDING_SHORTNAME;
-const string GUI_EXE = BRANDING_SHORTNAME+"gtk";
+const string GUI_EXE = BRANDING_SHORTNAME+"-gtk";
 
 //////////////////////////////////////////////////////////////////////////////
 // CONFIG FILE DEFAULTS

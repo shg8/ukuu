@@ -756,8 +756,8 @@ msgstr ""
 
 #: src/Gtk/SettingsWindow.vala:197
 msgid ""
-"They are still deleted once they become older than the \"prior major versions"
-"\" setting, or if they have been updated on the mainline-ppa site."
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
 msgstr ""
 "\"Önceki ana sürümler\" ayarından daha eski olduklarında ya da mainline-ppa "
 "sitesinde güncellendiklerinde silinmeye devam ederler."

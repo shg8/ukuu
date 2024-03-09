@@ -343,7 +343,8 @@ msgstr "Installa il kernel mainline più recente"
 #: src/Console/AppConsole.vala:42
 msgid "Install the latest mainline kernel without going to a new major version"
 msgstr ""
-"Installa l'ultimo kernel mainline senza passare ad una nuova versione principale"
+"Installa l'ultimo kernel mainline senza passare ad una nuova versione "
+"principale"
 
 #: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
 #: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
@@ -457,7 +458,8 @@ msgstr ""
 
 #: src/Console/AppConsole.vala:73
 msgid "Locked kernels and the currently running kernel are ignored"
-msgstr "I kernel bloccati e il kernel attualmente in esecuzione vengono ignorati"
+msgstr ""
+"I kernel bloccati e il kernel attualmente in esecuzione vengono ignorati"
 
 #: src/Console/AppConsole.vala:83
 msgid "done"
@@ -823,7 +825,8 @@ msgstr "Comando usato per eseguire dpkg con i permesi di root"
 #: src/Gtk/SettingsWindow.vala:280
 #, no-c-format
 msgid "The dpkg command is appended to the end, unless a %s is present."
-msgstr "Il comando dpkg è aggiunto in fondo, a meno che non sia presente un %s."
+msgstr ""
+"Il comando dpkg è aggiunto in fondo, a meno che non sia presente un %s."
 
 #: src/Gtk/SettingsWindow.vala:281
 #, no-c-format
@@ -860,7 +863,9 @@ msgstr "Comando di terminale utilizzato per eseguire"
 #, no-c-format
 msgid ""
 "The install/uninstall command is appended to the end, unless a %s is present."
-msgstr "Il comando installa/disinstall è aggiunto in fondo, a meno che non sia presente un %s."
+msgstr ""
+"Il comando installa/disinstall è aggiunto in fondo, a meno che non sia "
+"presente un %s."
 
 #: src/Gtk/SettingsWindow.vala:314
 #, no-c-format
@@ -899,8 +904,7 @@ msgstr "Copia"
 #: src/Gtk/TerminalWindow.vala:138
 msgid ""
 "Copies the entire output buffer, including scrollback, to the clipboard."
-msgstr ""
-"Copia l'intero buffer di output, incluso lo scrollback, negli Appunti."
+msgstr "Copia l'intero buffer di output, incluso lo scrollback, negli Appunti."
 
 #: src/Gtk/TerminalWindow.vala:145
 msgid "Cancel"
