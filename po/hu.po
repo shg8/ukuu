@@ -1,0 +1,925 @@
+# This file is put in the public domain.
+#
+# SPDX-FileCopyrightText: 2024 Kálmán „KAMI”
+# SPDX-FileCopyrightText: 2024 Kálmán „KAMI”
+# SPDX-FileCopyrightText: 2024 Kálmán „KAMI” Szalai <kami911@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: mainline 1.4.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-08 18:58-0500\n"
+"PO-Revision-Date: 2024-12-13 20:52+0100\n"
+"Last-Translator: Kálmán „KAMI” Szalai <kami911@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: src/Common/LinuxKernel.vala:153
+msgid "Distribution"
+msgstr "Terjesztés"
+
+#: src/Common/LinuxKernel.vala:168
+msgid "Architecture"
+msgstr "Architektúra"
+
+#: src/Common/LinuxKernel.vala:268 src/Gtk/MainWindow.vala:499
+msgid "Running"
+msgstr "Fut"
+
+#: src/Common/LinuxKernel.vala:269
+msgid "Installed"
+msgstr "Telepítve"
+
+#: src/Common/LinuxKernel.vala:270
+msgid "Invalid"
+msgstr "Érvénytelen"
+
+#: src/Common/LinuxKernel.vala:309
+msgid "loading cached pages"
+msgstr "gyorsítótárban tárolt oldalak betöltése"
+
+#: src/Common/LinuxKernel.vala:335
+msgid "queuing download"
+msgstr "letöltések sorbaállítása"
+
+#: src/Common/LinuxKernel.vala:348
+msgid "downloading new pages"
+msgstr "új oldalak letöltése"
+
+#: src/Common/LinuxKernel.vala:362
+msgid "loading new pages"
+msgstr "új oldalak betöltése"
+
+#: src/Common/LinuxKernel.vala:377
+msgid "Currently Running"
+msgstr "Jelenleg használt"
+
+#: src/Common/LinuxKernel.vala:378
+msgid "Oldest Installed"
+msgstr "Legrégebben telepített"
+
+#: src/Common/LinuxKernel.vala:379
+msgid "Newest Installed"
+msgstr "Nemrég telepített"
+
+#: src/Common/LinuxKernel.vala:380
+msgid "Newest Available"
+msgstr "Nemrég elérhető"
+
+#: src/Common/LinuxKernel.vala:381
+msgid "Available Minor Update"
+msgstr "Elérhető kisebb frissítés"
+
+#: src/Common/LinuxKernel.vala:382
+msgid "Available Major Update"
+msgstr "Elérhető fő frissítés"
+
+#: src/Common/LinuxKernel.vala:418
+msgid "OK"
+msgstr "OK"
+
+#: src/Common/LinuxKernel.vala:421
+msgid "FAILED"
+msgstr "Sikertelen"
+
+#: src/Common/LinuxKernel.vala:840
+msgid "Packages Available"
+msgstr "Elérhető csomagok"
+
+#: src/Common/LinuxKernel.vala:847
+msgid "Packages Installed"
+msgstr "Telepített csomagok"
+
+#: src/Common/LinuxKernel.vala:853 src/Console/AppConsole.vala:70
+#: src/Gtk/MainWindow.vala:200
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: src/Common/LinuxKernel.vala:859
+msgid "Locked"
+msgstr "Zárolva"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "removal"
+msgstr "eltávolítás"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "installation"
+msgstr "telepítés"
+
+#: src/Common/LinuxKernel.vala:861
+msgid "prevented"
+msgstr "megakadályozta"
+
+#: src/Common/LinuxKernel.vala:876 src/Common/LinuxKernel.vala:1018
+msgid "not found"
+msgstr "nem található"
+
+#: src/Common/LinuxKernel.vala:903
+msgid "needs update"
+msgstr "frissítés szükséges"
+
+#: src/Common/LinuxKernel.vala:990
+msgid "Available Kernels"
+msgstr "Elérhető rendszermagok"
+
+#: src/Common/LinuxKernel.vala:1018 src/Gtk/MainWindow.vala:149
+msgid "Kernel"
+msgstr "Rendszermag"
+
+#: src/Common/LinuxKernel.vala:1038
+msgid "checksums enabled"
+msgstr "ellenőrző összeg használata"
+
+#: src/Common/LinuxKernel.vala:1065
+#, c-format
+msgid "Downloading %s"
+msgstr "Letöltés: %s"
+
+#: src/Common/LinuxKernel.vala:1097
+msgid "Lock/Unlock: no kernels specified"
+msgstr "Zárolás vagy feloldás: nem adott meg rendszermagot"
+
+#: src/Common/LinuxKernel.vala:1099
+msgid "lock"
+msgstr "zárolás"
+
+#: src/Common/LinuxKernel.vala:1100
+msgid "unlock"
+msgstr "feloldás"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "ok"
+msgstr "ok"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "failed"
+msgstr "sikertelen"
+
+#: src/Common/LinuxKernel.vala:1117
+msgid "Download: no downloadable kernels specified"
+msgstr "Letöltés: nem adott meg letölthető rendszermagot"
+
+#: src/Common/LinuxKernel.vala:1138
+#, c-format
+msgid "%s is already installed"
+msgstr "%s már telepítve van"
+
+#: src/Common/LinuxKernel.vala:1143 src/Common/LinuxKernel.vala:1191
+#: src/Common/LinuxKernel.vala:1235
+#, c-format
+msgid "%s is locked"
+msgstr "%s zárolva van"
+
+#: src/Common/LinuxKernel.vala:1148
+#, c-format
+msgid "%s is invalid"
+msgstr "%s érvénytelen"
+
+#: src/Common/LinuxKernel.vala:1153
+#, c-format
+msgid "%s download failed"
+msgstr "%s letöltése meghiúsult"
+
+#: src/Common/LinuxKernel.vala:1157
+#, c-format
+msgid "Installing %s"
+msgstr "%s telepítése"
+
+#: src/Common/LinuxKernel.vala:1161
+msgid "Install: no installable kernels specified"
+msgstr "Telepítés: nincs megadva telepíthető rendszermag"
+
+#: src/Common/LinuxKernel.vala:1186 src/Common/LinuxKernel.vala:1227
+#, c-format
+msgid "%s is running"
+msgstr "%s használatban"
+
+#: src/Common/LinuxKernel.vala:1195
+#, c-format
+msgid "Uninstalling %s"
+msgstr "%s eltávolítása"
+
+#: src/Common/LinuxKernel.vala:1198
+msgid "found"
+msgstr "található"
+
+#: src/Common/LinuxKernel.vala:1202
+msgid "Uninstall: no uninstallable packages found"
+msgstr "Eltávolítás: nem található eltávolítható rendszermag"
+
+#: src/Common/LinuxKernel.vala:1231
+#, c-format
+msgid "%s is the highest installed version"
+msgstr "%s a legújabb telepített verzió"
+
+#: src/Common/LinuxKernel.vala:1243
+msgid "Could not find running kernel in list"
+msgstr "Nem található az éppen futó rendszermag a listában"
+
+#: src/Common/LinuxKernel.vala:1248
+msgid "No old kernels to uninstall"
+msgstr "Nincsenek eltávolítandó régi rendszermagok"
+
+#: src/Common/LinuxKernel.vala:1261
+msgid "No updates"
+msgstr "Nincsenek elérhető frissítések"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "yes",
+#. * string may be longer than one character. Examples: "Y" or "[y]"
+#: src/Common/Main.vala:123
+msgid "Y"
+msgstr "I"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "yes",
+#. * Example: "y"
+#: src/Common/Main.vala:126
+msgid "y"
+msgstr "i"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "no",
+#. * string may be longer than one character. Examples: "N" or "[n]"
+#: src/Common/Main.vala:129
+msgid "N"
+msgstr "N"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "no",
+#. * Example: "n"
+#: src/Common/Main.vala:132
+msgid "n"
+msgstr "n"
+
+#: src/Common/Main.vala:224
+msgid "Missing threads support in GLib."
+msgstr "A Glib programkönyvtárban nincs szálkezelési támogatás."
+
+#: src/Common/Main.vala:320
+msgid "Wrote config file"
+msgstr "A beállítófájl elmentve"
+
+#: src/Common/Main.vala:339
+msgid "No config file"
+msgstr "Nincsen beállítófájl"
+
+#: src/Common/Main.vala:422
+msgid "Loaded config file"
+msgstr "Betöltött beállítófájl"
+
+#: src/Common/Main.vala:444
+msgid "Called from"
+msgstr "Innen meghívva: "
+
+#: src/Common/Main.vala:444
+msgid "at logon"
+msgstr "bejelntkezéskor"
+
+#: src/Common/Main.vala:445
+msgid ""
+"This file is over-written and executed again whenever settings are saved in"
+msgstr ""
+"Ez a fájl felülíródik, majd újra végrehajtódik, amikor a beállítások mentése "
+"ide történik meg:"
+
+#: src/Common/Main.vala:485
+msgid "Notifications are disabled"
+msgstr "Értesítések letiltva"
+
+#: src/Common/Main.vala:538
+msgid "Can not reach site"
+msgstr "A webhely nem érhető el"
+
+#: src/Common/Package.vala:36
+#, c-format
+msgid "!!! Error running %s"
+msgstr "Hiba a(z) „%s” futtatásakor"
+
+#: src/lib/l.exec.vala:7 src/Gtk/MainWindow.vala:344
+msgid "Unable to launch"
+msgstr "Nem indítható el"
+
+#: src/lib/l.misc.vala:9
+msgid "Continue?"
+msgstr "Folytatni kívánja?"
+
+#: src/Console/AppConsole.vala:31
+#, c-format
+msgid "install kernel packages from %s"
+msgstr "kernel csomagok telepítése %s helyről"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "Syntax"
+msgstr "Szintaxis"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "command"
+msgstr "parancs"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "options"
+msgstr "beállítások"
+
+#: src/Console/AppConsole.vala:35 src/Gtk/AppGtk.vala:58
+msgid "Commands"
+msgstr "Parancsok"
+
+#: src/Console/AppConsole.vala:37
+msgid "Check for kernel updates"
+msgstr "Elérhető rendszermagok ellenőrzése"
+
+#: src/Console/AppConsole.vala:38
+msgid "Check for kernel updates and send a desktop notification"
+msgstr "Elérhető rendszermagok ellenőrzése és értesítés megjelenítése"
+
+#: src/Console/AppConsole.vala:39
+msgid "List the available kernels"
+msgstr "Elérhető rendszermagok megjelenítése"
+
+#: src/Console/AppConsole.vala:40
+msgid "List the installed kernels"
+msgstr "Telepített rendszermagok megjelenítése"
+
+#: src/Console/AppConsole.vala:41
+msgid "Install the latest mainline kernel"
+msgstr "Telepítse a legújabb fősorozatú rendszermag verziót"
+
+#: src/Console/AppConsole.vala:42
+msgid "Install the latest mainline kernel without going to a new major version"
+msgstr ""
+"A legújabb fősorozatú rendszermag verzió telepítése új főverzióra való "
+"áttérés nélkül"
+
+#: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
+#: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
+#: src/Console/AppConsole.vala:48
+msgid "names"
+msgstr "nevek"
+
+#: src/Console/AppConsole.vala:43
+msgid "Install the specified kernels"
+msgstr "Megadott verziójú rendszermag telepítése"
+
+#: src/Console/AppConsole.vala:44
+msgid "Uninstall the specified kernels"
+msgstr "Megadott verziójú rendszermag eltávolítása"
+
+#: src/Console/AppConsole.vala:45
+msgid "Uninstall all but the highest installed version"
+msgstr "Legmagasabb verziót kivéve az összes eltávolítása"
+
+#: src/Console/AppConsole.vala:46
+msgid "Download the specified kernels"
+msgstr "Megadott verziójú rendszermag telepítése"
+
+#: src/Console/AppConsole.vala:47
+msgid "Lock the specified kernels"
+msgstr "Megadott verziójú rendszermag zárolása"
+
+#: src/Console/AppConsole.vala:48
+msgid "Unlock the specified kernels"
+msgstr "Megadott verziójú rendszermag zárolásának feloldása"
+
+#: src/Console/AppConsole.vala:49
+msgid "Delete the cached info about available kernels"
+msgstr "Elérhető rendszermagokról a gyorsítótárban tárolt információk törlése"
+
+#: src/Console/AppConsole.vala:50
+msgid ""
+"Write the given include/exclude & previous-majors options to the config file"
+msgstr ""
+"A megadott bevont és kizárt, előző és főverzió beállítások beírása a "
+"konfigurációs állományba"
+
+#: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
+msgid "This help"
+msgstr "Súgó"
+
+#: src/Console/AppConsole.vala:53 src/Gtk/AppGtk.vala:61
+msgid "Options"
+msgstr "Beállítások"
+
+#: src/Console/AppConsole.vala:55
+msgid "Include release-candidate and unstable releases"
+msgstr "Beleértve a kiadásra jelölt és az instabil kiadásokat is"
+
+#: src/Console/AppConsole.vala:56
+msgid "Exclude release-candidate and unstable releases"
+msgstr "A kiadásra jelölt és instabil kiadások kizárása"
+
+#: src/Console/AppConsole.vala:57
+#, c-format
+msgid "Include flavors other than \"%s\""
+msgstr "Az eltérő változatok bevonása: „%s”"
+
+#: src/Console/AppConsole.vala:58
+#, c-format
+msgid "Exclude flavors other than \"%s\""
+msgstr "Az eltérő változatok kizárása: „%s”"
+
+#: src/Console/AppConsole.vala:59
+msgid "Include failed/incomplete builds"
+msgstr "Sikertelen és nem teljes összeállítások bevonása"
+
+#: src/Console/AppConsole.vala:60
+msgid "Exclude failed/incomplete builds"
+msgstr "Sikertelen és nem teljes összeállítások kizárása"
+
+#: src/Console/AppConsole.vala:61
+#, c-format
+msgid "Include # (or \"%s\" or \"%s\") previous major versions"
+msgstr "Beleértve # (vagy „%s” vagy „%s”) korábbi fő verziókat"
+
+#: src/Console/AppConsole.vala:62 src/Console/AppConsole.vala:63
+#, c-format
+msgid "Short for \"%s\""
+msgstr "„%s” rövidítése"
+
+#: src/Console/AppConsole.vala:66
+msgid "Don't actually install or uninstall"
+msgstr "Semmit nem telepít vagy távolít el"
+
+#: src/Console/AppConsole.vala:67 src/Gtk/AppGtk.vala:62
+msgid "Set verbosity level to #, or increment by 1"
+msgstr "A naplózás részletesség szintjének beállítása #-re, vagy növelés 1-gyel"
+
+#: src/Console/AppConsole.vala:68
+msgid "Pause and require keypress before exiting"
+msgstr "Szünet beiktatása és a kilépéshez egy billentyűt kell lenyomni"
+
+#: src/Console/AppConsole.vala:71
+#, c-format
+msgid "One or more version strings taken from the output of \"%s\""
+msgstr "Egy vagy több verziószöveg a „%s” kimenetből származik"
+
+#: src/Console/AppConsole.vala:72
+msgid ""
+"comma, pipe, colon, or space separated. (space requires quotes or backslashes)"
+msgstr ""
+"vesszővel, pipe, csővezeték, kettősponttal vagy szóközzel elválasztva. (a "
+"szóköz használatához idézőjelek vagy backslash-ek szükségesek.)"
+
+#: src/Console/AppConsole.vala:73
+msgid "Locked kernels and the currently running kernel are ignored"
+msgstr ""
+"A zárolt rendszermagok és az éppen futó rendszermag figyelmen kívül lesz "
+"hagyva."
+
+#: src/Console/AppConsole.vala:83
+msgid "done"
+msgstr "kész"
+
+#: src/Console/AppConsole.vala:84
+msgid "(press Enter to close)"
+msgstr "(nyomja meg az Entert a bezárásához)"
+
+#: src/Console/AppConsole.vala:235
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr "Ismeretlen kapcsoló: „%s”"
+
+#: src/Console/AppConsole.vala:250 src/Console/AppConsole.vala:254
+#: src/Console/AppConsole.vala:258 src/Console/AppConsole.vala:262
+#: src/Console/AppConsole.vala:267
+#, c-format
+msgid "Notice: \"%s\" has been renamed to \"%s\""
+msgstr "Megjegyzés: „%s” át lett nevezve erre: „%s”"
+
+#: src/Console/AppConsole.vala:271
+msgid "DRY-RUN"
+msgstr "Módosítás nélkül"
+
+#: src/Console/AppConsole.vala:277
+#, c-format
+msgid "Deleted %s"
+msgstr "„%s” törölve"
+
+#: src/Console/AppConsole.vala:278
+#, c-format
+msgid "Error deleting %s"
+msgstr "Hiba történt a(z) „%s” törlése közben"
+
+#: src/Console/AppConsole.vala:288
+#, c-format
+msgid "Wrote %s"
+msgstr "%s elmentve"
+
+#: src/Console/AppConsole.vala:294
+msgid "Installed Kernels"
+msgstr "Telepített rendszermagok"
+
+#: src/Console/AppConsole.vala:300
+msgid "Notifications disabled"
+msgstr "Értesítések letiltva"
+
+#: src/Console/AppConsole.vala:304
+msgid "No"
+msgstr "Nem"
+
+#: src/Console/AppConsole.vala:360
+msgid "Unknown command"
+msgstr "Ismeretlen parancs"
+
+#: src/Console/AppConsole.vala:379
+msgid "Latest update"
+msgstr "Legutóbbi frissítés"
+
+#: src/Console/AppConsole.vala:380
+msgid "Latest point update"
+msgstr "Legutóbbi hibajavító frissítés"
+
+#: src/Console/AppConsole.vala:381 src/Console/AppConsole.vala:387
+msgid "No updates found"
+msgstr "Nem találhatóak frissítések"
+
+#: src/Console/AppConsole.vala:396
+msgid "notify minor releases disabled"
+msgstr "kisebb kiadások értesítés küldése letiltva"
+
+#: src/Console/AppConsole.vala:404
+msgid "notify major releases disabled"
+msgstr "főbb kiadások értesítés küldése letiltva"
+
+#: src/Console/AppConsole.vala:408
+#, c-format
+msgid "Kernel %s Available"
+msgstr "%s rendszermag elérhető"
+
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+msgid "Show"
+msgstr "Megjelenítés"
+
+#: src/Console/AppConsole.vala:415 src/Gtk/MainWindow.vala:328
+msgid "Install"
+msgstr "Telepítés"
+
+#: src/Console/AppConsole.vala:420
+msgid "Previously notified"
+msgstr "Előzőleg értesítve"
+
+#: src/Gtk/AppGtk.vala:94
+msgid "Unknown option"
+msgstr "Ismeretlen kapcsoló"
+
+#: src/Gtk/MainWindow.vala:172
+msgid "Lock"
+msgstr "Zárolva"
+
+#: src/Gtk/MainWindow.vala:189
+msgid "Status"
+msgstr "Állapot"
+
+#: src/Gtk/MainWindow.vala:333
+msgid "Uninstall"
+msgstr "Eltávolítás"
+
+#: src/Gtk/MainWindow.vala:339
+msgid "Changelog, build status, etc"
+msgstr "Változásnapló, építési állapot, további információk"
+
+#: src/Gtk/MainWindow.vala:348
+msgid "Uninstall Old"
+msgstr "Régi eltávolítása"
+
+#: src/Gtk/MainWindow.vala:349
+msgid ""
+"Uninstall everything except:\n"
+"* the highest installed version\n"
+"* the currently running kernel\n"
+"* any kernels that are locked"
+msgstr ""
+"Távolítson el mindent, kivéve: \n"
+"* a legmagasabb telepített verzió\n"
+"* a jelenleg futó rendszermagot\n"
+"* minden olyan rendszermagot, amelyek zárolva vannak"
+
+#: src/Gtk/MainWindow.vala:354
+msgid "Reload"
+msgstr "Újratöltés"
+
+#: src/Gtk/MainWindow.vala:355
+msgid ""
+"Delete and reload all cached kernel info\n"
+"(the same as \"mainline --delete-cache\")"
+msgstr ""
+"Törli és újratölti az összes gyorsítótárazott rendszermag-információt \n"
+"(ugyanaz, mint a „mainline --delete-cache” parancs)"
+
+#: src/Gtk/MainWindow.vala:360
+msgid "Settings"
+msgstr "Beállítások"
+
+#: src/Gtk/MainWindow.vala:365
+msgid "About"
+msgstr "Névjegy"
+
+#: src/Gtk/MainWindow.vala:370
+msgid "Exit"
+msgstr "Kilépés"
+
+#: src/Gtk/MainWindow.vala:431
+msgid ""
+"A tool for installing kernel packages\n"
+"from the Ubuntu Mainline Kernels PPA"
+msgstr ""
+"Egy eszköz a rendszermag (kernel) csomagok telepítéséhez\n"
+"az Ubuntu Mainline Kernels PPA csomagtárolóból"
+
+#: src/Gtk/MainWindow.vala:433
+msgid "Original"
+msgstr "Eredeti"
+
+#: src/Gtk/MainWindow.vala:434
+msgid "Forked"
+msgstr "Fork-olva elindítva"
+
+#: src/Gtk/MainWindow.vala:444
+msgid "Updating Kernels..."
+msgstr "Rendszermagok frissítése…"
+
+#: src/Gtk/MainWindow.vala:502
+msgid "available"
+msgstr "elérhető"
+
+#: src/Gtk/SettingsWindow.vala:12
+msgid "Configuration"
+msgstr "Beállítás"
+
+#: src/Gtk/SettingsWindow.vala:24
+msgid "Done"
+msgstr "Kész"
+
+#: src/Gtk/SettingsWindow.vala:40
+msgid "Filter"
+msgstr "Szűrő"
+
+#: src/Gtk/SettingsWindow.vala:47
+msgid "Hide RC and unstable releases"
+msgstr "Kiadásra jelölt (RC) és nem stabil kiadások elrejtése"
+
+#: src/Gtk/SettingsWindow.vala:54
+msgid "Hide failed or incomplete builds"
+msgstr "Sikertelen és nem befejezetlen összeállítások elrejtése"
+
+#: src/Gtk/SettingsWindow.vala:57
+#, c-format
+msgid ""
+"If a kernel version exists on the mainline-ppa site, but is an incomplete or "
+"failed build for your arch (%s), then don't show it in the list."
+msgstr ""
+"Ha egy rendszermag verzió létezik a mainline-ppa oldalon, de hiányos vagy "
+"sikertelen összeállítás a használt architektúrához (%s), akkor ne jelenítse "
+"meg a listában."
+
+#: src/Gtk/SettingsWindow.vala:63
+#, c-format
+msgid "Hide flavors other than %s"
+msgstr "Eltérő változatok elrejtése: %s"
+
+#: src/Gtk/SettingsWindow.vala:66
+#, c-format
+msgid "Don't show the alternative flavors such as %s and %s"
+msgstr ""
+"Ne jelenítse meg az alternatív változatokat, mint például a(z) %s és a(z) %s"
+
+#: src/Gtk/SettingsWindow.vala:80
+msgid "prior major versions  ( -1 = all )"
+msgstr "előző főverziók  ( -1 = összes)"
+
+#: src/Gtk/SettingsWindow.vala:88
+msgid "Notification"
+msgstr "Értesítés"
+
+#: src/Gtk/SettingsWindow.vala:95
+msgid "Notify if a major release is available"
+msgstr "Értesítés küldése a főbb kiadásokról"
+
+#: src/Gtk/SettingsWindow.vala:101
+msgid "Notify if a minor release is available"
+msgstr "Értesítés küldése a kisebb kiadásokról"
+
+#: src/Gtk/SettingsWindow.vala:108
+msgid "Seconds interval enabled for debugging"
+msgstr "Hibakereséshez engedélyezett másodpercben megadott időintervallum"
+
+#: src/Gtk/SettingsWindow.vala:127
+msgid "Check every"
+msgstr "Ellenőrzés"
+
+#: src/Gtk/SettingsWindow.vala:137
+msgid "Hours"
+msgstr "óránként"
+
+#: src/Gtk/SettingsWindow.vala:138
+msgid "Days"
+msgstr "naponta"
+
+#: src/Gtk/SettingsWindow.vala:139
+msgid "Weeks"
+msgstr "hetente"
+
+#: src/Gtk/SettingsWindow.vala:140
+msgid "Seconds"
+msgstr "másodpercenként"
+
+#: src/Gtk/SettingsWindow.vala:149
+msgid "Network"
+msgstr "Hálózat"
+
+#: src/Gtk/SettingsWindow.vala:159
+msgid "Connection Timeout:"
+msgstr "Kapcsolat időkorlátja:"
+
+#: src/Gtk/SettingsWindow.vala:167
+msgid "seconds"
+msgstr "másodperc"
+
+#: src/Gtk/SettingsWindow.vala:175
+msgid "Concurrent Downloads:"
+msgstr "Párhuzamos letöltések száma:"
+
+#: src/Gtk/SettingsWindow.vala:185
+msgid "Verify Checksums"
+msgstr "Ellenőrző összegek ellenőrzése"
+
+#: src/Gtk/SettingsWindow.vala:188
+msgid ""
+"Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
+"downloads."
+msgstr ""
+"A CHECKSUMS fájlból származó sha-256 ellenőrző összegek segítségével "
+"ellenőrizze a letöltött *.deb csomagfájlokat."
+
+#: src/Gtk/SettingsWindow.vala:192
+msgid "Keep Debs"
+msgstr "DEB-csomagfájlok megtartása"
+
+#: src/Gtk/SettingsWindow.vala:195
+msgid ""
+"Retain downloaded *.deb files after install and re-use them for uninstall/"
+"reinstall instead of downloading again."
+msgstr ""
+"A letöltött *.deb csomagfájlokat a telepítés utáni megőrzése. A megtartott "
+"csomagfájlok újra felhasználhatóak, nem szükséges ismét letölteni azokat az "
+"eltávolításhoz vagy az újratelepítéshez."
+
+#: src/Gtk/SettingsWindow.vala:197
+msgid ""
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
+msgstr ""
+"Akkor is törlésre kerülnek, ha idősebbek, mint a „korábbi főverziók” "
+"beállítás, vagy ha frissítésre kerültek a mainline-ppa oldalon."
+
+#: src/Gtk/SettingsWindow.vala:203
+msgid "Keep Cache"
+msgstr "Gyorsítótár megtartása"
+
+#: src/Gtk/SettingsWindow.vala:206
+msgid ""
+"Don't trim the cached index.html files to just the installed versions and "
+"higher, instead essentially maintain a local mirror of the entire history "
+"from the mainline-ppa site."
+msgstr ""
+"Ne vágja le a gyorsítótárba kerülő index.html fájlokat csak a telepített "
+"verziókra és a magasabb verziókra, hanem lényegében kezelje az összes "
+"előzmény helyi tükörképét a mainline-ppa oldalról."
+
+#: src/Gtk/SettingsWindow.vala:208
+msgid ""
+"This speeds up some things a little at the cost of about 20M of hard drive "
+"space."
+msgstr ""
+"Ez némileg felgyorsít néhány dolgot, de további nagyjából 20 megabájt "
+"tárterületet foglal el."
+
+#: src/Gtk/SettingsWindow.vala:209
+msgid ""
+"It skips a step on every startup that loops through all known kernel versions "
+"just to see if there are any old ones to delete, and avoids deleting and re-"
+"downloading the same files if you change the \"prior major versions\" setting "
+"up and down."
+msgstr ""
+"Minden indításkor kihagy egy elemet, amikor az összes ismert rendszermag-"
+"verzión végigmegy, hogy megnézze, van-e törlendő régi verzió, és elkerüli "
+"ugyanazon fájlok törlését és újbóli letöltését, amikor a „korábbi főverziók” "
+"beállítását felfelé vagy lefelé módosítja."
+
+#: src/Gtk/SettingsWindow.vala:211
+msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
+msgstr ""
+"A 6.5.x verzió óta a teljes gyorsítótár nagyjából 22 megabájt méretű, a "
+"csökkentett gyorsítótár pedig hozzávetőlegesen 2 megabájt méretű."
+
+#: src/Gtk/SettingsWindow.vala:217
+msgid "Proxy"
+msgstr "Proxy"
+
+#: src/Gtk/SettingsWindow.vala:229
+msgid "Mainline-PPA URL"
+msgstr "Mainline-PPA URL"
+
+#: src/Gtk/SettingsWindow.vala:249
+msgid "External Commands"
+msgstr "Külső parancsok"
+
+#: src/Gtk/SettingsWindow.vala:256
+msgid "Superuser Authorization"
+msgstr "Alkalmazás a rendszergazda jogosultságú futtatáshoz"
+
+#: src/Gtk/SettingsWindow.vala:278
+msgid "Command used to run dpkg with root permissions."
+msgstr "A dpkg root jogosultságokkal történő futtatására használt parancs."
+
+#: src/Gtk/SettingsWindow.vala:280
+#, no-c-format
+msgid "The dpkg command is appended to the end, unless a %s is present."
+msgstr "A dpkg parancs a végére kerül, ha nincs máshol %s megadva."
+
+#: src/Gtk/SettingsWindow.vala:281
+#, no-c-format
+msgid "If a %s is present, then the %s is replaced with the dpkg command."
+msgstr ""
+"Ha a %s jelen van, akkor a %s szöveget a dpkg parancs helyettesíti fogja."
+
+#: src/Gtk/SettingsWindow.vala:282 src/Gtk/SettingsWindow.vala:315
+msgid "The built-in list contains examples of both."
+msgstr "A beépített lista mindkettőre tartalmaz példákat."
+
+#: src/Gtk/SettingsWindow.vala:284 src/Gtk/SettingsWindow.vala:321
+msgid "To modify any of the built-in default commands, just select it and edit."
+msgstr ""
+"A beépített alapértelmezett parancsok bármelyikének módosításához válassza ki "
+"és szerkessze."
+
+#: src/Gtk/SettingsWindow.vala:285 src/Gtk/SettingsWindow.vala:322
+msgid ""
+"The edited command is saved in the config file, the original is not changed."
+msgstr ""
+"A szerkesztett parancs elmentésre kerül a beállítófájlba, az eredeti nem "
+"változik."
+
+#: src/Gtk/SettingsWindow.vala:289
+msgid "Terminal Window"
+msgstr "Terminálablak"
+
+#: src/Gtk/SettingsWindow.vala:311
+msgid "Terminal command used to run"
+msgstr "Futtatáshoz használt terminálparancs"
+
+#: src/Gtk/SettingsWindow.vala:313
+#, no-c-format
+msgid ""
+"The install/uninstall command is appended to the end, unless a %s is present."
+msgstr ""
+"A telepítési vagy az eltávolítási parancs a végére kerül, ha nincs máshol %s "
+"megadva."
+
+#: src/Gtk/SettingsWindow.vala:314
+#, no-c-format
+msgid ""
+"If a %s is present, then the %s is replaced with the install/uninstall "
+"command."
+msgstr ""
+"Ha a %s megadásra kerül, akkor a %s helyébe a telepítési vagy az eltávolítási "
+"parancs lesz behelyettesítve."
+
+#: src/Gtk/SettingsWindow.vala:317
+msgid ""
+"The terminal program must stay in the foreground and block while the command "
+"is running, not fork and return immediately."
+msgstr ""
+"A terminálprogramnak előtérben kell maradnia a parancs futtatása során, nem "
+"pedig külön (fork) folyamatként futni és azonnal visszatérni."
+
+#: src/Gtk/SettingsWindow.vala:318
+msgid ""
+"Most terminal programs block by default, some require special commandline "
+"options."
+msgstr ""
+"A legtöbb terminálprogram alapértelmezés szerint az előtérben fut, a többi a "
+"blokkoláshoz speciális parancssori beállításokat igényelnek."
+
+#: src/Gtk/SettingsWindow.vala:319
+#, c-format
+msgid "For example, %s requires \"%s\"."
+msgstr "Például: %s igényli a következőt: „%s”."
+
+#: src/Gtk/TerminalWindow.vala:130
+msgid "Copy"
+msgstr "Másolás"
+
+#: src/Gtk/TerminalWindow.vala:138
+msgid "Copies the entire output buffer, including scrollback, to the clipboard."
+msgstr ""
+"A teljes kimeneti puffert, az előzményekkel együtt, a vágólapra másolja."
+
+#: src/Gtk/TerminalWindow.vala:145
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/Gtk/TerminalWindow.vala:153
+msgid "Close"
+msgstr "Bezárás"
