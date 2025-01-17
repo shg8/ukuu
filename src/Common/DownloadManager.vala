@@ -1,355 +1,133 @@
 
-using TeeJee.Logging;
-using TeeJee.FileSystem;
-using TeeJee.ProcessHelper;
-using TeeJee.Misc;
+using l.misc;
 
+public class DownloadTask : AsyncTask {
 
-public class DownloadTask : AsyncTask{
-	
-	// settings
-	public bool status_in_kb = false;
-	public int connect_timeout_secs = 60;
-	public int timeout_secs = 60;
-	public int concurrent_downloads = 20;
+	Gee.ArrayList<DownloadItem> downloads;
+	Gee.HashMap<string,DownloadItem> map;
+	Regex rex_progress = null;
+	Regex rex_complete = null;
 
-	// download lists
-	private Gee.ArrayList<DownloadItem> downloads;
-	private Gee.HashMap<string, DownloadItem> map;
-
-	private Gee.HashMap<string,Regex> regex = null;
-	private static TeeJee.Version tool_version = null;
-
-	public DownloadTask(){
-
-		base();
-		
+	public DownloadTask() {
 		downloads = new Gee.ArrayList<DownloadItem>();
-		map = new Gee.HashMap<string, DownloadItem>();
-		
-		regex = new Gee.HashMap<string,Regex>();
-		
+		map = new Gee.HashMap<string,DownloadItem>();
 		try {
-			//Sample:
-			//[#4df0c7 19283968B/45095814B(42%) CN:1 DL:105404B ETA:4m4s]
-			regex["file-progress"] = new Regex("""^\[#([^ \t]+)[ \t]+([0-9]+)B\/([0-9]+)B\(([0-9]+)%\)[ \t]+[^ \t]+[ \t]+DL\:([0-9]+)B[ \t]+ETA\:([^ \]]+)\]""");
-
-			//12/03 21:15:33 [NOTICE] Download complete: /home/teejee/.cache/ukuu/v4.7.8/CHANGES
-			regex["file-complete"] = new Regex("""[0-9A-Z\/: ]*\[NOTICE\] Download complete\: (.*)""");
-
-			//8ae3a3|OK  |    16KiB/s|/home/teejee/.cache/ukuu/v4.0.7-wily/index.html
-			//bea740|OK  |        n/a|/home/teejee/.cache/ukuu/v4.0.9-wily/CHANGES
-			regex["file-status"] = new Regex("""^([0-9A-Za-z]+)\|(OK|ERR)[ ]*\|[ ]*(n\/a|[0-9.]+[A-Za-z\/]+)\|(.*)""");
-		}
-		catch (Error e) {
-			log_error (e.message);
-		}
-
-		check_tool_version();
+			// [#4df0c7 19283968B/45095814B(42%) CN:1 DL:105404B ETA:4m4s]
+			// [#c47ded 7986B/0B CN:1 DL:7984B]  // no total bytes for index.html
+			rex_progress = new Regex("""^\[#(.+) (.+)B\/(.+)B""");
+			// 12/03 21:15:33 [NOTICE] Download complete: /home/teejee/.cache/ukuu/v4.7.8/CHANGES
+			rex_complete = new Regex("""^.+\[NOTICE\] Download complete\: (.+)$""");
+		} catch (Error e) { vprint(e.message,1,stderr); }
 	}
 
-	public static void check_tool_version(){
-
-		if (tool_version != null){
-			return;
-		}
-
-		log_debug("DownloadTask: check_tool_version()");
-		
-		string std_out, std_err;
-		
-		string cmd = "aria2c --version";
-
-		log_debug(cmd);
-		
-		exec_script_sync(cmd, out std_out, out std_err);
-
-		string line = std_out.split("\n")[0];
-		var arr = line.split(" ");
-		if (arr.length >= 3){
-			string part = arr[2].strip();
-			tool_version = new TeeJee.Version(part);
-			log_msg("aria2c version: %s".printf(tool_version.version));
-		}
-		else{
-			tool_version = new TeeJee.Version("1.19"); // assume
-		}
-	}
-	
-	// execution ----------------------------
-
-	public void add_to_queue(DownloadItem item){
-
-		item.task = this;
-		
+	public void add_to_queue(DownloadItem item) {
+		item.gid = "%06x".printf(Main.rnd.int_range(0,0xffffff));
+		map[item.gid] = item;
 		downloads.add(item);
-
-		// set gid - 16 character hex string in lowercase
-		
-		do{
-			item.gid = random_string(16,"0123456789abcdef").down();
-		}
-		while (map.has_key(item.gid_key));
-		
-		map[item.gid_key] = item;
 	}
 
-	public void clear_queue(){
-		downloads.clear();
-		map.clear();
-	}
-	
 	public void execute() {
-
 		prepare();
-
 		begin();
-
-		if (status == AppStatus.RUNNING){
-			
-			
-		}
 	}
 
 	public void prepare() {
-		string script_text = build_script();
-		save_bash_script_temp(script_text, script_file);
+		stdin_data = "";
+
+		foreach (var item in downloads) {
+			stdin_data += item.source_uri + "\n"
+				+ " gid="+item.gid+"0000000000\n"
+				+ " dir="+item.download_dir+"\n"
+				+ " out="+item.file_name+"\n"
+				;
+			if (item.checksum.length>0) stdin_data += ""
+				+ " checksum="+item.checksum+"\n"
+				+ " check-integrity=true\n"
+				;
+		}
+
+		string[] cmd = {
+			"aria2c",
+			//"--max-download-limit=256K",  // force slow download for debugging
+			"--input-file=-",
+			"--no-netrc=true",
+			"--no-conf=true",
+			"--summary-interval=1",
+			"--auto-save-interval=1",
+			"--enable-color=false",
+			"--allow-overwrite",
+			"--max-file-not-found=3",
+			"--retry-wait=2",
+			"--show-console-readout=false",
+			"--download-result=full",
+			"--human-readable=false"
+		};
+
+		if (App.connect_timeout_seconds>0) cmd += "--connect-timeout="+App.connect_timeout_seconds.to_string();
+
+		if (App.concurrent_downloads>0) {
+			cmd += "--max-concurrent-downloads="+App.concurrent_downloads.to_string();
+			cmd += "--max-connection-per-server="+App.concurrent_downloads.to_string();
+		}
+
+		if (App.all_proxy.length>0) cmd += "--all-proxy='"+App.all_proxy+"'";
+
+		spawn_args = cmd;
 	}
 
-	private string build_script() {
-		string cmd = "";
-		
-		var command = "wget";
-		var cmd_path = get_cmd_path ("aria2c");
-		if ((cmd_path != null) && (cmd_path.length > 0)) {
-			command = "aria2c";
-		}
+	public override void process_line(string? line) {
+		if (line==null) return;
+		var l = line.strip();
+		if (l.length<1) return;
 
-		if (command == "aria2c"){
-			string list = "";
-			string list_file = path_combine(working_dir, "download.list");
-			foreach(var item in downloads){
-				list += "%s\n".printf(item.source_uri);
-				list += "  gid=%s\n".printf(item.gid);
-				list += "  dir=%s\n".printf(item.partial_dir);
-				list += "  out=%s\n".printf(item.file_name);
-			}
-			file_write(list_file, list);
-			log_debug("saved download list: %s".printf(list_file));
-			
-			cmd += "aria2c";
-			cmd += " -i '%s'".printf(escape_single_quote(list_file));
-			cmd += " --show-console-readout=false";
-			cmd += " --summary-interval=1";
-			cmd += " --auto-save-interval=1"; // save aria2 control file every sec
-			cmd += " --human-readable=false";
-
-			if (tool_version.is_minimum("1.19")){
-				cmd += " --enable-color=false"; // enabling color breaks the output parsing
-			}
-			
-			cmd += " --allow-overwrite";
-			cmd += " --connect-timeout=%d".printf(connect_timeout_secs);
-			cmd += " --timeout=%d".printf(timeout_secs);
-			cmd += " --max-concurrent-downloads=%d".printf(concurrent_downloads);
-			//cmd += " --continue"; // never use - this is for continuing files downloaded sequentially by web browser and other programs
-			//cmd += " --optimize-concurrent-downloads=true"; // not supported by all versions
-			//cmd += " -l download.log"; // too much logging
-			//cmd += " --direct-file-mapping=false"; // not required
-			//cmd += " --dry-run";
-		}
-
-		log_debug(cmd);
-
-		return cmd;
-	}
-	
-	public override void parse_stdout_line(string out_line){
-		if (is_terminated) {
-			return;
-		}
-		
-		update_progress_parse_console_output(out_line);
-	}
-	
-	public override void parse_stderr_line(string err_line){
-		if (is_terminated) {
-			return;
-		}
-		
-		update_progress_parse_console_output(err_line);
-	}
-
-	public bool update_progress_parse_console_output (string line) {
-		if ((line == null) || (line.length == 0)) {
-			return true;
-		}
-
-		//log_debug(line);
+		//vprint(l,2);
 
 		MatchInfo match;
-		
-		if (regex["file-complete"].match(line, 0, out match)) {
-			//log_debug("match: file-complete: " + line);
+
+		if (rex_progress.match(l, 0, out match)) {
+			var gid = match.fetch(1).strip();
+			//vprint("match file-progress "+gid,2);
+			if (map.has_key(gid)) {
+				var item = map[gid];
+				item.bytes_received = int64.parse(match.fetch(2));
+				if (item.bytes_total<0) item.bytes_total = int64.parse(match.fetch(3));
+				status_line = item.file_name+" "+item.bytes_received.to_string()+"/"+item.bytes_total.to_string();
+			}
+		} else if (rex_complete.match(l, 0, out match)) {
+			var df = match.fetch(1);
+			//vprint("match file-complete "+df,2);
+			foreach (var gid in map.keys) {
+				var item = map[gid];
+				if (item.download_dir+"/"+item.file_name!=df) continue;
+				if (item.bytes_total>item.bytes_received) item.bytes_received = item.bytes_total;
+				else item.bytes_total = item.bytes_received;
+				status_line = item.file_name+" "+item.bytes_received.to_string()+"/"+item.bytes_total.to_string();
+				break;
+			}
+
 			prg_count++;
 		}
-		else if (regex["file-status"].match(line, 0, out match)) {
 
-			//8ae3a3|OK  |    16KiB/s|/home/teejee/.cache/ukuu/v4.0.7-wily/index.html
-
-			//log_debug("match: file-status: " + line);
-			
-			// always display
-			//log_debug(line);
-			
-			string gid_key = match.fetch(1).strip();
-			string status = match.fetch(2).strip();
-			int64 rate = int64.parse(match.fetch(3).strip());
-			//string file = match.fetch(4).strip();
-
-			if (map.has_key(gid_key)){
-				map[gid_key].rate = rate;
-				map[gid_key].status = status;
-			}
-		}
-		else if (regex["file-progress"].match(line, 0, out match)) {
-
-			//log_debug("match: file-progress: " + line);
-			
-			// Note: HTML files don't have content length, so bytes_total will be 0
-
-			var gid_key = match.fetch(1).strip();
-			var received = int64.parse(match.fetch(2).strip());
-			var total = int64.parse(match.fetch(3).strip());
-			//var percent = double.parse(match.fetch(4).strip());
-			var rate = int64.parse(match.fetch(5).strip());
-			var eta = match.fetch(6).strip();
-
-			if (map.has_key(gid_key)){
-				var item = map[gid_key];
-				item.bytes_received = received;
-				if (item.bytes_total == 0){
-					item.bytes_total = total;
-				}
-				item.rate = rate;
-				item.eta = eta;
-				item.status = "RUNNING";
-
-				status_line = item.status_line();
-			}
-
-			//log_debug(status_line);
-		}
-		else {
-			//log_debug("unmatched: '%s'".printf(line));
-		}
-		
-		return true;
-	}
-
-	protected override void finish_task(){
-		
-		verify();
-
-		dir_delete(working_dir);
-	}
-
-	private void verify() {
-
-		log_debug("verify()");
-		
-		foreach(var item in downloads){
-
-			if (!file_exists(item.file_path_partial)){
-				log_debug("verify: file_path_partial not found: %s".printf(item.file_path_partial));
-				continue;
-			}
-
-			//log_msg("status=%s".printf(item.status));
-			
-			if (item.status == "OK"){
-				file_move(item.file_path_partial, item.file_path);
-			}
-			else{
-				file_delete(item.file_path_partial);
-			}
-		}
-	}
-
-	public int read_status(){
-		var status_file = working_dir + "/status";
-		var f = File.new_for_path(status_file);
-		if (f.query_exists()){
-			var txt = file_read(status_file);
-			return int.parse(txt);
-		}
-		return -1;
+		return;
 	}
 }
 
+public class DownloadItem : GLib.Object {
+	public string source_uri = "";   // "https://kernel.ubuntu.com/mainline/v6.2.7/amd64/linux-headers-6.2.7-060207-generic_6.2.7-060207.202303170542_amd64.deb"
+	public string download_dir = ""; // "/home/bkw/.cache/mainline/6.2.7/amd64"
+	public string file_name = "";    // "linux-headers-6.2.7-060207-generic_6.2.7-060207.202303170542_amd64.deb"
+	public string checksum = "";     // "sha-256=4a90d708984d6a8fab68411710be09aa2614fe1be5b5e054a872b155d15faab6"
 
-public class DownloadItem : GLib.Object
-{
-	/* File is downloaded to 'partial_dir' and moved to 'download_dir'
-	 * after successful completion. File will always be saved with
-	 * the specified name 'file_name' instead of the source file name.
-	 * */
-	 
-	public string file_name = "";
-	public string download_dir = "";
-	public string partial_dir = "";
-	public string source_uri = "";
-
-	public string gid = ""; // ID
-	public int64 bytes_total = 0;
+	public string gid = "";          // first 6 bytes of gid
+	public int64 bytes_total = -1;   // allow total=0 b/c server doesn't supply total for index.html
 	public int64 bytes_received = 0;
-	public int64 rate = 0;
-	public string eta = "";
-	public string status = "";
 
-	public DownloadTask task = null;
-	
-	public string file_path{
-		owned get{
-			return path_combine(download_dir, file_name);
-		}
-	}
-
-	public string file_path_partial{
-		owned get{
-			return path_combine(partial_dir, file_name);
-		}
-	}
-
-	public string gid_key{
-		owned get{
-			return gid.substring(0,6);;
-		}
-	}
-
-	public DownloadItem(string _source_uri, string _download_dir, string _file_name){
-		
-		file_name = _file_name;
-		download_dir = _download_dir;
-		partial_dir = create_temp_subdir();
-		source_uri = _source_uri;
-	}
-
-	public string status_line(){
-		
-		if (task.status_in_kb){
-			return "%s / %s, %s/s (%s)".printf(
-				format_file_size(bytes_received, false, "", true, 1),
-				format_file_size(bytes_total, false, "", true, 1),
-				format_file_size(rate, false, "", true, 1),
-				eta).replace("\n","");
-		}
-		else{
-			return "%s / %s, %s/s (%s)".printf(
-				format_file_size(bytes_received),
-				format_file_size(bytes_total),
-				format_file_size(rate),
-				eta).replace("\n","");
-		}
+	public DownloadItem(string uri = "", string destdir = "", string fname = "", string? cksum = "") {
+		if (cksum==null) cksum = "";
+		vprint("DownloadItem("+uri+","+destdir+","+fname+","+cksum+")",3);
+		source_uri = uri;
+		file_name = fname;
+		download_dir = destdir;
+		checksum = cksum;
 	}
 }

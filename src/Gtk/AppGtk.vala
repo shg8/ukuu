@@ -17,174 +17,99 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
  * MA 02110-1301, USA.
- *
- *
  */
 
-using GLib;
-using Gtk;
-using Gee;
-using Json;
-
-using TeeJee.Logging;
-using TeeJee.FileSystem;
-using TeeJee.JsonHelper;
-using TeeJee.ProcessHelper;
-using TeeJee.GtkHelper;
-using TeeJee.System;
-using TeeJee.Misc;
+using l.misc;
 
 public Main App;
-public const string AppName = "Ubuntu Kernel Update Utility";
-public const string AppShortName = "ukuu";
-public const string AppVersion = "18.9.3";
-public const string AppAuthor = "Tony George";
-public const string AppAuthorEmail = "teejeetech@gmail.com";
-
-const string GETTEXT_PACKAGE = "";
-const string LOCALE_DIR = "/usr/share/locale";
 
 public class AppGtk : GLib.Object {
 
-	public static int main (string[] args) {
-		
-		set_locale();
+	public static int main(string[] argv) {
+		App = new Main();
+		App.gui_mode = true;
+		parse_arguments(argv);
+		vprint(string.joinv(" ",argv),3);
+		App.init2();
 
-		log_msg("%s v%s".printf(AppShortName, AppVersion));
+		X.init_threads();
+		Gtk.init(ref argv);
+		new MainWindow();
 
-		Gtk.init(ref args);
-
-		init_tmp("ukuu-gtk");
-		
-		//check_if_admin();
-
-		LOG_TIMESTAMP = false;
-
-		//check dependencies
-		string message;
-		if (!Main.check_dependencies(out message)) {
-			gtk_messagebox("", message, null, true);
-			exit(0);
-		}
-
-		App = new Main(args, true);
-		parse_arguments(args);
-
-		// create main window --------------------------------------
-
-		var window = new MainWindow ();
-		
-		window.destroy.connect(()=>{
-			log_debug("MainWindow destroyed");
-			Gtk.main_quit();
-		});
-		
-		window.delete_event.connect((event)=>{
-			log_debug("MainWindow closed");
-			Gtk.main_quit();
-			return true;
-		});
-
-		if (App.command == "list"){
-			window.show_all();
-		}
-
-		//start event loop -------------------------------------
-		
 		Gtk.main();
 
-		App.save_app_config();
+		// window size basically always changes slightly even if you don't touch anything,
+		// so don't bother detecting changes, just always re-write the config file on exit
+		var x = App.RUN_NOTIFY_SCRIPT;  // save whether run_notify was already pending
+		App.save_app_config();          // this sets run_notify blindly but we don't need that just for window size change
+		App.RUN_NOTIFY_SCRIPT = x;      // restore the original pending/not-pending state
+		App.run_notify_script_if_due(); // in case it was pending and somehow missed along the way
 
 		return 0;
 	}
 
-	private static void set_locale() {
-		
-		Intl.setlocale(GLib.LocaleCategory.MESSAGES, "ukuu");
-		Intl.textdomain(GETTEXT_PACKAGE);
-		Intl.bind_textdomain_codeset(GETTEXT_PACKAGE, "utf-8");
-		Intl.bindtextdomain(GETTEXT_PACKAGE, LOCALE_DIR);
-	}
-
 	public static bool parse_arguments(string[] args) {
 
-		log_msg(_("Cache") + ": %s".printf(LinuxKernel.CACHE_DIR));
-		log_msg(_("Temp") + ": %s".printf(TEMP_DIR));
+		string help = ""
+		+ "\n" + BRANDING_SHORTNAME + " " + BRANDING_VERSION + " - " + BRANDING_LONGNAME + "\n"
+		+ "\n"
+		+ _("Syntax") + ": " + args[0] + " ["+_("command")+"] ["+_("options")+"]\n"
+		+ "\n"
+		+ _("Commands") + "\n"
+		+ "  help                " + _("This help") + "\n"
+		+ "\n"
+		+ _("Options") + "\n"
+		+ "  -v|--verbose [#]    " + _("Set verbosity level to #, or increment by 1") + "\n"
+		+ "\n"
+		;
 
-		App.command = "list";
-		
-		//parse options
-		for (int k = 1; k < args.length; k++) // Oth arg is app path
+		// parse options
+		for (int i = 1; i < args.length; i++)
 		{
-			switch (args[k].down()) {
-				
-			case "--debug":
-				LOG_DEBUG = true;
-				break;
+			switch (args[i].down()) {
 
-			case "--help":
-			case "--h":
-			case "-h":
-				log_msg(help_message());
-				exit(0);
-				return true;
-			}
-		}
-
-		for (int k = 1; k < args.length; k++) // Oth arg is app path
-		{
-			switch (args[k].down()) {
-
-			// commands ------------------------------------
-
+			// this is the notification action
 			case "--install":
+			case "install":
 				App.command = "install";
-				App.requested_version = args[++k];
+				if (++i < args.length) App.requested_versions = args[i].down();
 				break;
 
-			case "--notify":
-				App.command = "notify";
-				break;
-				
-			// options without argument --------------------------
-			
-			case "--help":
-			case "--h":
-			case "-h":
+			case "-v":
 			case "--debug":
-				// already handled - do nothing
+			case "--verbose":
+				if (App.set_verbose(args[i+1])) i++;
 				break;
 
-			// options with argument --------------------------
-
-			case "--user":
-				k += 1;
-				// already handled - do nothing
+			case "-?":
+			case "-h":
+			case "--help":
+			case "help":
+			case "--version":
+				vprint(help,0);
+				exit(0);
 				break;
 
 			default:
-				//unknown option - show help and exit
-				log_error(_("Unknown option") + ": %s".printf(args[k]));
-				log_msg(help_message());
-				return false;
+				vprint(_("Unknown option") + ": \""+args[i]+"\"",1,stderr);
+				vprint(help,0);
+				exit(1);
+				break;
+
 			}
 		}
 
 		return true;
 	}
 
-	public static string help_message() {
-		
-		string msg = "\n" + AppName + " v" + AppVersion + " by Tony George (teejeetech@gmail.com)" + "\n";
-		msg += "\n";
-		msg += _("Syntax") + ": ukuu-gtk [options]\n";
-		msg += "\n";
-		msg += _("Options") + ":\n";
-		msg += "\n";
-		msg += "  --debug      " + _("Print debug information") + "\n";
-		msg += "  --h[elp]     " + _("Show all options") + "\n";
-		msg += "\n";
-		return msg;
+	public static void alert(Gtk.Window win, string msg, Gtk.MessageType type = Gtk.MessageType.INFO) {
+		var dlg = new Gtk.MessageDialog(win,
+			Gtk.DialogFlags.MODAL,
+			type,
+			Gtk.ButtonsType.OK,
+			msg);
+		dlg.response.connect(() => { dlg.destroy(); });
+		dlg.show();
 	}
-}
 
+}

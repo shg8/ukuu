@@ -1,0 +1,873 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mainline\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:53-0400\n"
+"PO-Revision-Date: 2022-09-28 11:48+0900\n"
+"Last-Translator: Kevin Kim <root@hamonikr.org>\n"
+"Language-Team: Korean\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: src/Common/LinuxKernel.vala:153
+msgid "Distribution"
+msgstr "배포판"
+
+#: src/Common/LinuxKernel.vala:168
+msgid "Architecture"
+msgstr "아키텍처"
+
+#: src/Common/LinuxKernel.vala:268 src/Gtk/MainWindow.vala:499
+msgid "Running"
+msgstr "구동 중"
+
+#: src/Common/LinuxKernel.vala:269
+msgid "Installed"
+msgstr "설치 됨"
+
+#: src/Common/LinuxKernel.vala:270
+msgid "Invalid"
+msgstr "사용할 수 없음"
+
+#: src/Common/LinuxKernel.vala:309
+msgid "loading cached pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:335
+msgid "queuing download"
+msgstr "대기열 다운로드"
+
+#: src/Common/LinuxKernel.vala:348
+msgid "downloading new pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:362
+msgid "loading new pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:377
+msgid "Currently Running"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:378
+msgid "Oldest Installed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:379
+msgid "Newest Installed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:380
+msgid "Newest Available"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:381
+msgid "Available Minor Update"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:382
+msgid "Available Major Update"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:418
+msgid "OK"
+msgstr "확인"
+
+#: src/Common/LinuxKernel.vala:421
+msgid "FAILED"
+msgstr "실패"
+
+#: src/Common/LinuxKernel.vala:840
+msgid "Packages Available"
+msgstr "설치 가능한 패키지"
+
+#: src/Common/LinuxKernel.vala:847
+msgid "Packages Installed"
+msgstr "설치된 패키지"
+
+#: src/Common/LinuxKernel.vala:853 src/Console/AppConsole.vala:70
+#: src/Gtk/MainWindow.vala:200
+msgid "Notes"
+msgstr "노트"
+
+#: src/Common/LinuxKernel.vala:859
+msgid "Locked"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:860
+msgid "removal"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:860
+msgid "installation"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:861
+msgid "prevented"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:876 src/Common/LinuxKernel.vala:1018
+msgid "not found"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:903
+msgid "needs update"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:990
+msgid "Available Kernels"
+msgstr "설치 가능한 커널"
+
+#: src/Common/LinuxKernel.vala:1018 src/Gtk/MainWindow.vala:149
+msgid "Kernel"
+msgstr "커널"
+
+#: src/Common/LinuxKernel.vala:1038
+msgid "checksums enabled"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1065
+#, c-format
+msgid "Downloading %s"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1097
+msgid "Lock/Unlock: no kernels specified"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1099
+msgid "lock"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1100
+msgid "unlock"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "ok"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "failed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1117
+msgid "Download: no downloadable kernels specified"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1138
+#, c-format
+msgid "%s is already installed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1143 src/Common/LinuxKernel.vala:1191
+#: src/Common/LinuxKernel.vala:1235
+#, c-format
+msgid "%s is locked"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1148
+#, c-format
+msgid "%s is invalid"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1153
+#, c-format
+msgid "%s download failed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1157
+#, c-format
+msgid "Installing %s"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1161
+msgid "Install: no installable kernels specified"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1186 src/Common/LinuxKernel.vala:1227
+#, c-format
+msgid "%s is running"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1195
+#, c-format
+msgid "Uninstalling %s"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1198
+msgid "found"
+msgstr "설립하다"
+
+#: src/Common/LinuxKernel.vala:1202
+msgid "Uninstall: no uninstallable packages found"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1231
+#, c-format
+msgid "%s is the highest installed version"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1243
+msgid "Could not find running kernel in list"
+msgstr "현재 실행 중인 커널을 찾을 수 없습니다"
+
+#: src/Common/LinuxKernel.vala:1248
+msgid "No old kernels to uninstall"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1261
+msgid "No updates"
+msgstr ""
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "yes",
+#. * string may be longer than one character. Examples: "Y" or "[y]"
+#: src/Common/Main.vala:123
+msgid "Y"
+msgstr "[예]"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "yes",
+#. * Example: "y"
+#: src/Common/Main.vala:126
+msgid "y"
+msgstr "예"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "no",
+#. * string may be longer than one character. Examples: "N" or "[n]"
+#: src/Common/Main.vala:129
+msgid "N"
+msgstr "[아]"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "no",
+#. * Example: "n"
+#: src/Common/Main.vala:132
+msgid "n"
+msgstr "아"
+
+#: src/Common/Main.vala:224
+msgid "Missing threads support in GLib."
+msgstr ""
+
+#: src/Common/Main.vala:320
+msgid "Wrote config file"
+msgstr ""
+
+#: src/Common/Main.vala:339
+msgid "No config file"
+msgstr ""
+
+#: src/Common/Main.vala:422
+msgid "Loaded config file"
+msgstr ""
+
+#: src/Common/Main.vala:444
+msgid "Called from"
+msgstr "에서 호출"
+
+#: src/Common/Main.vala:444
+msgid "at logon"
+msgstr "로그온 시"
+
+#: src/Common/Main.vala:445
+msgid ""
+"This file is over-written and executed again whenever settings are saved in"
+msgstr "이 파일은 덮어쓰고 설정이 저장될 때마다 다시 실행됩니다."
+
+#: src/Common/Main.vala:485
+msgid "Notifications are disabled"
+msgstr "알림이 비활성화 되었습니다"
+
+#: src/Common/Main.vala:538
+msgid "Can not reach site"
+msgstr "사이트에 도달 할 수 없습니다"
+
+#: src/Common/Package.vala:36
+#, c-format
+msgid "!!! Error running %s"
+msgstr ""
+
+#: src/lib/l.exec.vala:7 src/Gtk/MainWindow.vala:344
+msgid "Unable to launch"
+msgstr ""
+
+#: src/lib/l.misc.vala:9
+msgid "Continue?"
+msgstr ""
+
+#: src/Console/AppConsole.vala:31
+#, c-format
+msgid "install kernel packages from %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "Syntax"
+msgstr "문법"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "command"
+msgstr ""
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "options"
+msgstr "옵션"
+
+#: src/Console/AppConsole.vala:35 src/Gtk/AppGtk.vala:58
+msgid "Commands"
+msgstr "명령어"
+
+#: src/Console/AppConsole.vala:37
+msgid "Check for kernel updates"
+msgstr "커널 업데이트 확인"
+
+#: src/Console/AppConsole.vala:38
+msgid "Check for kernel updates and send a desktop notification"
+msgstr ""
+
+#: src/Console/AppConsole.vala:39
+msgid "List the available kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:40
+msgid "List the installed kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:41
+msgid "Install the latest mainline kernel"
+msgstr ""
+
+#: src/Console/AppConsole.vala:42
+msgid "Install the latest mainline kernel without going to a new major version"
+msgstr ""
+
+#: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
+#: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
+#: src/Console/AppConsole.vala:48
+msgid "names"
+msgstr ""
+
+#: src/Console/AppConsole.vala:43
+msgid "Install the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:44
+msgid "Uninstall the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:45
+msgid "Uninstall all but the highest installed version"
+msgstr "설치된 가장 높은 버전을 제외한 모든 버전을 제거합니다"
+
+#: src/Console/AppConsole.vala:46
+msgid "Download the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:47
+msgid "Lock the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:48
+msgid "Unlock the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:49
+msgid "Delete the cached info about available kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:50
+msgid ""
+"Write the given include/exclude & previous-majors options to the config file"
+msgstr ""
+
+#: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
+msgid "This help"
+msgstr ""
+
+#: src/Console/AppConsole.vala:53 src/Gtk/AppGtk.vala:61
+msgid "Options"
+msgstr "옵션"
+
+#: src/Console/AppConsole.vala:55
+msgid "Include release-candidate and unstable releases"
+msgstr ""
+
+#: src/Console/AppConsole.vala:56
+msgid "Exclude release-candidate and unstable releases"
+msgstr ""
+
+#: src/Console/AppConsole.vala:57
+#, c-format
+msgid "Include flavors other than \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:58
+#, c-format
+msgid "Exclude flavors other than \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:59
+msgid "Include failed/incomplete builds"
+msgstr ""
+
+#: src/Console/AppConsole.vala:60
+msgid "Exclude failed/incomplete builds"
+msgstr ""
+
+#: src/Console/AppConsole.vala:61
+#, c-format
+msgid "Include # (or \"%s\" or \"%s\") previous major versions"
+msgstr ""
+
+#: src/Console/AppConsole.vala:62 src/Console/AppConsole.vala:63
+#, c-format
+msgid "Short for \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:66
+msgid "Don't actually install or uninstall"
+msgstr ""
+
+#: src/Console/AppConsole.vala:67 src/Gtk/AppGtk.vala:62
+msgid "Set verbosity level to #, or increment by 1"
+msgstr ""
+
+#: src/Console/AppConsole.vala:68
+msgid "Pause and require keypress before exiting"
+msgstr ""
+
+#: src/Console/AppConsole.vala:71
+#, c-format
+msgid "One or more version strings taken from the output of \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:72
+msgid ""
+"comma, pipe, colon, or space separated. (space requires quotes or "
+"backslashes)"
+msgstr ""
+
+#: src/Console/AppConsole.vala:73
+msgid "Locked kernels and the currently running kernel are ignored"
+msgstr ""
+
+#: src/Console/AppConsole.vala:83
+msgid "done"
+msgstr ""
+
+#: src/Console/AppConsole.vala:84
+msgid "(press Enter to close)"
+msgstr ""
+
+#: src/Console/AppConsole.vala:235
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:250 src/Console/AppConsole.vala:254
+#: src/Console/AppConsole.vala:258 src/Console/AppConsole.vala:262
+#: src/Console/AppConsole.vala:267
+#, c-format
+msgid "Notice: \"%s\" has been renamed to \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:271
+msgid "DRY-RUN"
+msgstr ""
+
+#: src/Console/AppConsole.vala:277
+#, c-format
+msgid "Deleted %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:278
+#, c-format
+msgid "Error deleting %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:288
+#, c-format
+msgid "Wrote %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:294
+msgid "Installed Kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:300
+msgid "Notifications disabled"
+msgstr ""
+
+#: src/Console/AppConsole.vala:304
+msgid "No"
+msgstr ""
+
+#: src/Console/AppConsole.vala:360
+msgid "Unknown command"
+msgstr ""
+
+#: src/Console/AppConsole.vala:379
+msgid "Latest update"
+msgstr "최신 업데이트"
+
+#: src/Console/AppConsole.vala:380
+msgid "Latest point update"
+msgstr "최신 포인트 업데이트"
+
+#: src/Console/AppConsole.vala:381 src/Console/AppConsole.vala:387
+msgid "No updates found"
+msgstr "업데이트를 찾을 수 없습니다"
+
+#: src/Console/AppConsole.vala:396
+msgid "notify minor releases disabled"
+msgstr ""
+
+#: src/Console/AppConsole.vala:404
+msgid "notify major releases disabled"
+msgstr ""
+
+#: src/Console/AppConsole.vala:408
+#, c-format
+msgid "Kernel %s Available"
+msgstr "커널 %s 사용 가능"
+
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+msgid "Show"
+msgstr "보이기"
+
+#: src/Console/AppConsole.vala:415 src/Gtk/MainWindow.vala:328
+msgid "Install"
+msgstr "설치"
+
+#: src/Console/AppConsole.vala:420
+msgid "Previously notified"
+msgstr "이전에 통보됨"
+
+#: src/Gtk/AppGtk.vala:94
+msgid "Unknown option"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:172
+msgid "Lock"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:189
+msgid "Status"
+msgstr "상태"
+
+#: src/Gtk/MainWindow.vala:333
+msgid "Uninstall"
+msgstr "삭제"
+
+#: src/Gtk/MainWindow.vala:339
+msgid "Changelog, build status, etc"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:348
+msgid "Uninstall Old"
+msgstr "오래된 커널 제거"
+
+#: src/Gtk/MainWindow.vala:349
+msgid ""
+"Uninstall everything except:\n"
+"* the highest installed version\n"
+"* the currently running kernel\n"
+"* any kernels that are locked"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:354
+msgid "Reload"
+msgstr "새로고침"
+
+#: src/Gtk/MainWindow.vala:355
+msgid ""
+"Delete and reload all cached kernel info\n"
+"(the same as \"mainline --delete-cache\")"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:360
+msgid "Settings"
+msgstr "설정"
+
+#: src/Gtk/MainWindow.vala:365
+msgid "About"
+msgstr "정보"
+
+#: src/Gtk/MainWindow.vala:370
+msgid "Exit"
+msgstr "출구"
+
+#: src/Gtk/MainWindow.vala:431
+msgid ""
+"A tool for installing kernel packages\n"
+"from the Ubuntu Mainline Kernels PPA"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:433
+msgid "Original"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:434
+msgid "Forked"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:444
+msgid "Updating Kernels..."
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:502
+msgid "available"
+msgstr "사용가능"
+
+#: src/Gtk/SettingsWindow.vala:12
+msgid "Configuration"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:24
+msgid "Done"
+msgstr "끝난"
+
+#: src/Gtk/SettingsWindow.vala:40
+msgid "Filter"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:47
+msgid "Hide RC and unstable releases"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:54
+msgid "Hide failed or incomplete builds"
+msgstr "실패하거나 불완전한 빌드 숨기기"
+
+#: src/Gtk/SettingsWindow.vala:57
+#, c-format
+msgid ""
+"If a kernel version exists on the mainline-ppa site, but is an incomplete or "
+"failed build for your arch (%s), then don't show it in the list."
+msgstr ""
+"커널 버전이 mainline-ppa 사이트에 있지만 아키텍처(%s)에 대해 불완전하거나 실"
+"패한 빌드인 경우 목록에 표시하지 마십시오."
+
+#: src/Gtk/SettingsWindow.vala:63
+#, c-format
+msgid "Hide flavors other than %s"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:66
+#, c-format
+msgid "Don't show the alternative flavors such as %s and %s"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:80
+msgid "prior major versions  ( -1 = all )"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:88
+msgid "Notification"
+msgstr "알림"
+
+#: src/Gtk/SettingsWindow.vala:95
+msgid "Notify if a major release is available"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:101
+msgid "Notify if a minor release is available"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:108
+msgid "Seconds interval enabled for debugging"
+msgstr "디버깅에 사용할 수 있는 초 간격"
+
+#: src/Gtk/SettingsWindow.vala:127
+msgid "Check every"
+msgstr "확인 주기"
+
+#: src/Gtk/SettingsWindow.vala:137
+msgid "Hours"
+msgstr "시간"
+
+#: src/Gtk/SettingsWindow.vala:138
+msgid "Days"
+msgstr "일"
+
+#: src/Gtk/SettingsWindow.vala:139
+msgid "Weeks"
+msgstr "주"
+
+#: src/Gtk/SettingsWindow.vala:140
+msgid "Seconds"
+msgstr "초"
+
+#: src/Gtk/SettingsWindow.vala:149
+msgid "Network"
+msgstr "네트워크"
+
+#: src/Gtk/SettingsWindow.vala:159
+msgid "Connection Timeout:"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:167
+msgid "seconds"
+msgstr "초"
+
+#: src/Gtk/SettingsWindow.vala:175
+msgid "Concurrent Downloads:"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:185
+msgid "Verify Checksums"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:188
+msgid ""
+"Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
+"downloads."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:192
+msgid "Keep Debs"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:195
+msgid ""
+"Retain downloaded *.deb files after install and re-use them for uninstall/"
+"reinstall instead of downloading again."
+msgstr ""
+"설치 후 다운로드한 .deb 파일을 유지하고 다시 다운로드하는 대신 제거/재설치에 "
+"다시 사용하십시오."
+
+#: src/Gtk/SettingsWindow.vala:197
+msgid ""
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:203
+msgid "Keep Cache"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:206
+msgid ""
+"Don't trim the cached index.html files to just the installed versions and "
+"higher, instead essentially maintain a local mirror of the entire history "
+"from the mainline-ppa site."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:208
+msgid ""
+"This speeds up some things a little at the cost of about 20M of hard drive "
+"space."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:209
+msgid ""
+"It skips a step on every startup that loops through all known kernel "
+"versions just to see if there are any old ones to delete, and avoids "
+"deleting and re-downloading the same files if you change the \"prior major "
+"versions\" setting up and down."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:211
+msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:217
+msgid "Proxy"
+msgstr "대리"
+
+#: src/Gtk/SettingsWindow.vala:229
+msgid "Mainline-PPA URL"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:249
+msgid "External Commands"
+msgstr "외부 명령"
+
+#: src/Gtk/SettingsWindow.vala:256
+msgid "Superuser Authorization"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:278
+msgid "Command used to run dpkg with root permissions."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:280
+#, no-c-format
+msgid "The dpkg command is appended to the end, unless a %s is present."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:281
+#, no-c-format
+msgid "If a %s is present, then the %s is replaced with the dpkg command."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:282 src/Gtk/SettingsWindow.vala:315
+msgid "The built-in list contains examples of both."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:284 src/Gtk/SettingsWindow.vala:321
+msgid ""
+"To modify any of the built-in default commands, just select it and edit."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:285 src/Gtk/SettingsWindow.vala:322
+msgid ""
+"The edited command is saved in the config file, the original is not changed."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:289
+msgid "Terminal Window"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:311
+msgid "Terminal command used to run"
+msgstr "실행에 사용되는 터미널 명령"
+
+#: src/Gtk/SettingsWindow.vala:313
+#, no-c-format
+msgid ""
+"The install/uninstall command is appended to the end, unless a %s is present."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:314
+#, no-c-format
+msgid ""
+"If a %s is present, then the %s is replaced with the install/uninstall "
+"command."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:317
+msgid ""
+"The terminal program must stay in the foreground and block while the command "
+"is running, not fork and return immediately."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:318
+msgid ""
+"Most terminal programs block by default, some require special commandline "
+"options."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:319
+#, c-format
+msgid "For example, %s requires \"%s\"."
+msgstr ""
+
+#: src/Gtk/TerminalWindow.vala:130
+msgid "Copy"
+msgstr "복사"
+
+#: src/Gtk/TerminalWindow.vala:138
+msgid ""
+"Copies the entire output buffer, including scrollback, to the clipboard."
+msgstr "스크롤백을 포함한 전체 출력 버퍼를 클립보드에 복사합니다."
+
+#: src/Gtk/TerminalWindow.vala:145
+msgid "Cancel"
+msgstr "취소"
+
+#: src/Gtk/TerminalWindow.vala:153
+msgid "Close"
+msgstr "닫기"

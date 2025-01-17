@@ -1,0 +1,913 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mainline\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:53-0400\n"
+"PO-Revision-Date: 2023-08-10 00:24+0200\n"
+"Last-Translator: Matthaiks\n"
+"Language-Team: Polish\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: src/Common/LinuxKernel.vala:153
+msgid "Distribution"
+msgstr "Dystrybucja"
+
+#: src/Common/LinuxKernel.vala:168
+msgid "Architecture"
+msgstr "Architektura"
+
+#: src/Common/LinuxKernel.vala:268 src/Gtk/MainWindow.vala:499
+msgid "Running"
+msgstr "Uruchomione"
+
+#: src/Common/LinuxKernel.vala:269
+msgid "Installed"
+msgstr "Zainstalowane"
+
+#: src/Common/LinuxKernel.vala:270
+msgid "Invalid"
+msgstr "Nieprawidłowe"
+
+#: src/Common/LinuxKernel.vala:309
+msgid "loading cached pages"
+msgstr "ładowanie stron z pamięci podręcznej"
+
+#: src/Common/LinuxKernel.vala:335
+msgid "queuing download"
+msgstr "pobieranie w kolejce"
+
+#: src/Common/LinuxKernel.vala:348
+msgid "downloading new pages"
+msgstr "pobieranie nowych stron"
+
+#: src/Common/LinuxKernel.vala:362
+msgid "loading new pages"
+msgstr "ładowanie nowych stron"
+
+#: src/Common/LinuxKernel.vala:377
+msgid "Currently Running"
+msgstr "Obecnie uruchomione"
+
+#: src/Common/LinuxKernel.vala:378
+msgid "Oldest Installed"
+msgstr "Najstarsze zainstalowane"
+
+#: src/Common/LinuxKernel.vala:379
+msgid "Newest Installed"
+msgstr "Najnowsze zainstalowane"
+
+#: src/Common/LinuxKernel.vala:380
+msgid "Newest Available"
+msgstr "Najnowsze dostępne"
+
+#: src/Common/LinuxKernel.vala:381
+msgid "Available Minor Update"
+msgstr "Dostępna aktualizacja drobna"
+
+#: src/Common/LinuxKernel.vala:382
+msgid "Available Major Update"
+msgstr "Dostępna aktualizacja główna"
+
+#: src/Common/LinuxKernel.vala:418
+msgid "OK"
+msgstr "OK"
+
+#: src/Common/LinuxKernel.vala:421
+msgid "FAILED"
+msgstr "NIEPOWODZENIE"
+
+#: src/Common/LinuxKernel.vala:840
+msgid "Packages Available"
+msgstr "Dostępne pakiety"
+
+#: src/Common/LinuxKernel.vala:847
+msgid "Packages Installed"
+msgstr "Zainstalowane pakiety"
+
+#: src/Common/LinuxKernel.vala:853 src/Console/AppConsole.vala:70
+#: src/Gtk/MainWindow.vala:200
+msgid "Notes"
+msgstr "Notatki"
+
+#: src/Common/LinuxKernel.vala:859
+msgid "Locked"
+msgstr "Zablokowane"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "removal"
+msgstr "usuwanie"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "installation"
+msgstr "instalacja"
+
+#: src/Common/LinuxKernel.vala:861
+msgid "prevented"
+msgstr "uniemożliwione"
+
+#: src/Common/LinuxKernel.vala:876 src/Common/LinuxKernel.vala:1018
+msgid "not found"
+msgstr "nie odnaleziono"
+
+#: src/Common/LinuxKernel.vala:903
+msgid "needs update"
+msgstr "wymaga aktualizacji"
+
+#: src/Common/LinuxKernel.vala:990
+msgid "Available Kernels"
+msgstr "Dostępne jądra"
+
+#: src/Common/LinuxKernel.vala:1018 src/Gtk/MainWindow.vala:149
+msgid "Kernel"
+msgstr "Jądro"
+
+#: src/Common/LinuxKernel.vala:1038
+msgid "checksums enabled"
+msgstr "włączone sumy kontrolne"
+
+#: src/Common/LinuxKernel.vala:1065
+#, c-format
+msgid "Downloading %s"
+msgstr "Pobieranie %s"
+
+#: src/Common/LinuxKernel.vala:1097
+msgid "Lock/Unlock: no kernels specified"
+msgstr "Zablokuj/odblokuj: nie określono jąder"
+
+#: src/Common/LinuxKernel.vala:1099
+msgid "lock"
+msgstr "zablokuj"
+
+#: src/Common/LinuxKernel.vala:1100
+msgid "unlock"
+msgstr "odblokuj"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "ok"
+msgstr "ok"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "failed"
+msgstr "niepowodzenie"
+
+#: src/Common/LinuxKernel.vala:1117
+msgid "Download: no downloadable kernels specified"
+msgstr "Pobieranie: nie określono jąder do pobrania"
+
+#: src/Common/LinuxKernel.vala:1138
+#, c-format
+msgid "%s is already installed"
+msgstr "%s jest już zainstalowane"
+
+#: src/Common/LinuxKernel.vala:1143 src/Common/LinuxKernel.vala:1191
+#: src/Common/LinuxKernel.vala:1235
+#, c-format
+msgid "%s is locked"
+msgstr "%s jest zablokowane"
+
+#: src/Common/LinuxKernel.vala:1148
+#, c-format
+msgid "%s is invalid"
+msgstr "%s jest nieprawidłowe"
+
+#: src/Common/LinuxKernel.vala:1153
+#, c-format
+msgid "%s download failed"
+msgstr "Pobieranie %s nie powiodło się"
+
+#: src/Common/LinuxKernel.vala:1157
+#, c-format
+msgid "Installing %s"
+msgstr "Instalowanie %s"
+
+#: src/Common/LinuxKernel.vala:1161
+msgid "Install: no installable kernels specified"
+msgstr "Instalowanie: nie określono jąder do zainstalowania"
+
+#: src/Common/LinuxKernel.vala:1186 src/Common/LinuxKernel.vala:1227
+#, c-format
+msgid "%s is running"
+msgstr "%s jest uruchomione"
+
+#: src/Common/LinuxKernel.vala:1195
+#, c-format
+msgid "Uninstalling %s"
+msgstr "Odinstalowywanie %s"
+
+#: src/Common/LinuxKernel.vala:1198
+msgid "found"
+msgstr "znalezione"
+
+#: src/Common/LinuxKernel.vala:1202
+msgid "Uninstall: no uninstallable packages found"
+msgstr "Odinstalowanie: nie znaleziono pakietów, które można odinstalować"
+
+#: src/Common/LinuxKernel.vala:1231
+#, c-format
+msgid "%s is the highest installed version"
+msgstr "%s to najwyższa zainstalowana wersja"
+
+#: src/Common/LinuxKernel.vala:1243
+msgid "Could not find running kernel in list"
+msgstr "Nie można znaleźć uruchomionego jądra na liście"
+
+#: src/Common/LinuxKernel.vala:1248
+msgid "No old kernels to uninstall"
+msgstr "Brak starych jąder do odinstalowania"
+
+#: src/Common/LinuxKernel.vala:1261
+msgid "No updates"
+msgstr "Brak aktualizacji"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "yes",
+#. * string may be longer than one character. Examples: "Y" or "[y]"
+#: src/Common/Main.vala:123
+msgid "Y"
+msgstr "T"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "yes",
+#. * Example: "y"
+#: src/Common/Main.vala:126
+msgid "y"
+msgstr "t"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "no",
+#. * string may be longer than one character. Examples: "N" or "[n]"
+#: src/Common/Main.vala:129
+msgid "N"
+msgstr "N"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "no",
+#. * Example: "n"
+#: src/Common/Main.vala:132
+msgid "n"
+msgstr "n"
+
+#: src/Common/Main.vala:224
+msgid "Missing threads support in GLib."
+msgstr "Brak obsługi wątków w GLib."
+
+#: src/Common/Main.vala:320
+msgid "Wrote config file"
+msgstr "Zapisano plik konfiguracyjny"
+
+#: src/Common/Main.vala:339
+msgid "No config file"
+msgstr "Brak pliku konfiguracyjnego"
+
+#: src/Common/Main.vala:422
+msgid "Loaded config file"
+msgstr "Załadowano plik konfiguracyjny"
+
+#: src/Common/Main.vala:444
+msgid "Called from"
+msgstr "Wywołano z"
+
+#: src/Common/Main.vala:444
+msgid "at logon"
+msgstr "przy logowaniu"
+
+#: src/Common/Main.vala:445
+msgid ""
+"This file is over-written and executed again whenever settings are saved in"
+msgstr ""
+"Ten plik jest nadpisywany i wykonywany ponownie za każdym razem, gdy "
+"ustawienia są zapisywane w"
+
+#: src/Common/Main.vala:485
+msgid "Notifications are disabled"
+msgstr "Powiadomienia są wyłączone"
+
+#: src/Common/Main.vala:538
+msgid "Can not reach site"
+msgstr "Nie można dotrzeć do witryny"
+
+#: src/Common/Package.vala:36
+#, c-format
+msgid "!!! Error running %s"
+msgstr "!!! Błąd podczas uruchamiania %s"
+
+#: src/lib/l.exec.vala:7 src/Gtk/MainWindow.vala:344
+msgid "Unable to launch"
+msgstr "Nie można uruchomić"
+
+#: src/lib/l.misc.vala:9
+msgid "Continue?"
+msgstr "Kontynuować?"
+
+#: src/Console/AppConsole.vala:31
+#, c-format
+msgid "install kernel packages from %s"
+msgstr "zainstaluj pakiety jąder z %s"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "Syntax"
+msgstr "Składnia"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "command"
+msgstr "polecenie"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "options"
+msgstr "opcje"
+
+#: src/Console/AppConsole.vala:35 src/Gtk/AppGtk.vala:58
+msgid "Commands"
+msgstr "Polecenia"
+
+#: src/Console/AppConsole.vala:37
+msgid "Check for kernel updates"
+msgstr "Sprawdź nowe wersje jądra"
+
+#: src/Console/AppConsole.vala:38
+msgid "Check for kernel updates and send a desktop notification"
+msgstr "Sprawdź aktualizacje jąder i wyślij powiadomienie na pulpicie"
+
+#: src/Console/AppConsole.vala:39
+msgid "List the available kernels"
+msgstr "Wyświetl listę dostępnych jąder"
+
+#: src/Console/AppConsole.vala:40
+msgid "List the installed kernels"
+msgstr "Wyświetl listę zainstalowanych jąder"
+
+#: src/Console/AppConsole.vala:41
+msgid "Install the latest mainline kernel"
+msgstr "Zainstaluj najnowsze jądro"
+
+#: src/Console/AppConsole.vala:42
+msgid "Install the latest mainline kernel without going to a new major version"
+msgstr "Zainstaluj najnowsze jądro bez przechodzenia do nowej wersji głównej"
+
+#: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
+#: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
+#: src/Console/AppConsole.vala:48
+msgid "names"
+msgstr "nazwy"
+
+#: src/Console/AppConsole.vala:43
+msgid "Install the specified kernels"
+msgstr "Zainstaluj określone jądra"
+
+#: src/Console/AppConsole.vala:44
+msgid "Uninstall the specified kernels"
+msgstr "Odinstaluj określone jądra"
+
+#: src/Console/AppConsole.vala:45
+msgid "Uninstall all but the highest installed version"
+msgstr "Odinstaluj wszystkie oprócz najwyższej zainstalowanej wersji"
+
+#: src/Console/AppConsole.vala:46
+msgid "Download the specified kernels"
+msgstr "Pobierz określone jądra"
+
+#: src/Console/AppConsole.vala:47
+msgid "Lock the specified kernels"
+msgstr "Zablokuj określone jądra"
+
+#: src/Console/AppConsole.vala:48
+msgid "Unlock the specified kernels"
+msgstr "Odblokuj określone jądra"
+
+#: src/Console/AppConsole.vala:49
+msgid "Delete the cached info about available kernels"
+msgstr "Usuń informacje z pamięci podręcznej o dostępnych jądrach"
+
+#: src/Console/AppConsole.vala:50
+msgid ""
+"Write the given include/exclude & previous-majors options to the config file"
+msgstr ""
+"Zapisz opcje dołączania/wykluczania i poprzednich wersji głównych w pliku "
+"konfiguracyjnym"
+
+#: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
+msgid "This help"
+msgstr "Ta pomoc"
+
+#: src/Console/AppConsole.vala:53 src/Gtk/AppGtk.vala:61
+msgid "Options"
+msgstr "Opcje"
+
+#: src/Console/AppConsole.vala:55
+msgid "Include release-candidate and unstable releases"
+msgstr "Uwzględnij wersje kandydujące do wydania i wersje niestabilne"
+
+#: src/Console/AppConsole.vala:56
+msgid "Exclude release-candidate and unstable releases"
+msgstr "Wyklucz wersje kandydujące do wydania i wersje niestabilne"
+
+#: src/Console/AppConsole.vala:57
+#, c-format
+msgid "Include flavors other than \"%s\""
+msgstr "Uwzględnij warianty inne niż „%s”"
+
+#: src/Console/AppConsole.vala:58
+#, c-format
+msgid "Exclude flavors other than \"%s\""
+msgstr "Wyklucz warianty inne niż „%s”"
+
+#: src/Console/AppConsole.vala:59
+msgid "Include failed/incomplete builds"
+msgstr "Dołącz nieudane/niekompletne kompilacje"
+
+#: src/Console/AppConsole.vala:60
+msgid "Exclude failed/incomplete builds"
+msgstr "Wyklucz nieudane/niekompletne kompilacje"
+
+#: src/Console/AppConsole.vala:61
+#, c-format
+msgid "Include # (or \"%s\" or \"%s\") previous major versions"
+msgstr "Uwzględnij # (lub „%s” albo „%s”) poprzednich wersji głównych"
+
+#: src/Console/AppConsole.vala:62 src/Console/AppConsole.vala:63
+#, c-format
+msgid "Short for \"%s\""
+msgstr "Skrót od „%s”"
+
+#: src/Console/AppConsole.vala:66
+msgid "Don't actually install or uninstall"
+msgstr "W rzeczywistości nie instaluj ani nie odinstalowuj"
+
+#: src/Console/AppConsole.vala:67 src/Gtk/AppGtk.vala:62
+msgid "Set verbosity level to #, or increment by 1"
+msgstr "Ustaw poziom gadatliwości na # lub zwiększ o 1"
+
+#: src/Console/AppConsole.vala:68
+msgid "Pause and require keypress before exiting"
+msgstr "Wstrzymaj i wymagaj naciśnięcia klawisza przed wyjściem"
+
+#: src/Console/AppConsole.vala:71
+#, c-format
+msgid "One or more version strings taken from the output of \"%s\""
+msgstr "Jeden lub więcej ciągów wersji pobranych z danych wyjściowych „%s”"
+
+#: src/Console/AppConsole.vala:72
+msgid ""
+"comma, pipe, colon, or space separated. (space requires quotes or "
+"backslashes)"
+msgstr ""
+"oddzielone przecinkiem, kreską pionową, dwukropkiem lub spacją. (spacja "
+"wymaga cudzysłowów lub odwrotnych ukośników)"
+
+#: src/Console/AppConsole.vala:73
+msgid "Locked kernels and the currently running kernel are ignored"
+msgstr "Zablokowane jądra i aktualnie uruchomione jądro są ignorowane"
+
+#: src/Console/AppConsole.vala:83
+msgid "done"
+msgstr "gotowe"
+
+#: src/Console/AppConsole.vala:84
+msgid "(press Enter to close)"
+msgstr "(naciśnij Enter, aby zamknąć)"
+
+#: src/Console/AppConsole.vala:235
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr "Nieznana opcja „%s”"
+
+#: src/Console/AppConsole.vala:250 src/Console/AppConsole.vala:254
+#: src/Console/AppConsole.vala:258 src/Console/AppConsole.vala:262
+#: src/Console/AppConsole.vala:267
+#, c-format
+msgid "Notice: \"%s\" has been renamed to \"%s\""
+msgstr "Uwaga: „%s” zmieniono na „%s”"
+
+#: src/Console/AppConsole.vala:271
+msgid "DRY-RUN"
+msgstr "PRÓBA"
+
+#: src/Console/AppConsole.vala:277
+#, c-format
+msgid "Deleted %s"
+msgstr "Usunięto %s"
+
+#: src/Console/AppConsole.vala:278
+#, c-format
+msgid "Error deleting %s"
+msgstr "Błąd podczas usuwania %s"
+
+#: src/Console/AppConsole.vala:288
+#, c-format
+msgid "Wrote %s"
+msgstr "Zapisano %s"
+
+#: src/Console/AppConsole.vala:294
+msgid "Installed Kernels"
+msgstr "Zainstalowane jądra"
+
+#: src/Console/AppConsole.vala:300
+msgid "Notifications disabled"
+msgstr "Wyłączono powiadomienia"
+
+#: src/Console/AppConsole.vala:304
+msgid "No"
+msgstr "Nie"
+
+#: src/Console/AppConsole.vala:360
+msgid "Unknown command"
+msgstr "Nieznane polecenie"
+
+#: src/Console/AppConsole.vala:379
+msgid "Latest update"
+msgstr "Najnowsza aktualizacja"
+
+#: src/Console/AppConsole.vala:380
+msgid "Latest point update"
+msgstr "Najnowsza aktualizacja punktowa"
+
+#: src/Console/AppConsole.vala:381 src/Console/AppConsole.vala:387
+msgid "No updates found"
+msgstr "Nie znaleziono aktualizacji"
+
+#: src/Console/AppConsole.vala:396
+msgid "notify minor releases disabled"
+msgstr "wyłączono powiadomienia o wersjach drobnych"
+
+#: src/Console/AppConsole.vala:404
+msgid "notify major releases disabled"
+msgstr "wyłączono powiadomienia o wersjach głównych"
+
+#: src/Console/AppConsole.vala:408
+#, c-format
+msgid "Kernel %s Available"
+msgstr "Dostępne jądro %s"
+
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+msgid "Show"
+msgstr "Pokaż"
+
+#: src/Console/AppConsole.vala:415 src/Gtk/MainWindow.vala:328
+msgid "Install"
+msgstr "Zainstaluj"
+
+#: src/Console/AppConsole.vala:420
+msgid "Previously notified"
+msgstr "Wcześniej powiadomiono"
+
+#: src/Gtk/AppGtk.vala:94
+msgid "Unknown option"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:172
+msgid "Lock"
+msgstr "Zablokuj"
+
+#: src/Gtk/MainWindow.vala:189
+msgid "Status"
+msgstr "Stan"
+
+#: src/Gtk/MainWindow.vala:333
+msgid "Uninstall"
+msgstr "Odinstaluj"
+
+#: src/Gtk/MainWindow.vala:339
+msgid "Changelog, build status, etc"
+msgstr "Dziennik zmian, status kompilacji itd."
+
+#: src/Gtk/MainWindow.vala:348
+msgid "Uninstall Old"
+msgstr "Odinstaluj stare"
+
+#: src/Gtk/MainWindow.vala:349
+msgid ""
+"Uninstall everything except:\n"
+"* the highest installed version\n"
+"* the currently running kernel\n"
+"* any kernels that are locked"
+msgstr ""
+"Odinstaluj wszystko oprócz:\n"
+"* najwyższej zainstalowanej wersji\n"
+"* aktualnie działającego jądra\n"
+"* wszelkich jąder, które są zablokowane"
+
+#: src/Gtk/MainWindow.vala:354
+msgid "Reload"
+msgstr "Wczytaj ponownie"
+
+#: src/Gtk/MainWindow.vala:355
+msgid ""
+"Delete and reload all cached kernel info\n"
+"(the same as \"mainline --delete-cache\")"
+msgstr ""
+"Usuń i wczytaj ponownie wszystkie informacje o jądrze\n"
+"z pamięci podręcznej (to samo co „mainline --delete-cache”)"
+
+#: src/Gtk/MainWindow.vala:360
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: src/Gtk/MainWindow.vala:365
+msgid "About"
+msgstr "O programie"
+
+#: src/Gtk/MainWindow.vala:370
+msgid "Exit"
+msgstr "Wyjdź"
+
+#: src/Gtk/MainWindow.vala:431
+msgid ""
+"A tool for installing kernel packages\n"
+"from the Ubuntu Mainline Kernels PPA"
+msgstr ""
+"Narzędzie do instalowania pakietów\n"
+"jąder z Ubuntu Mainline Kernels PPA"
+
+#: src/Gtk/MainWindow.vala:433
+msgid "Original"
+msgstr "Oryginalne"
+
+#: src/Gtk/MainWindow.vala:434
+msgid "Forked"
+msgstr "Sforkowane"
+
+#: src/Gtk/MainWindow.vala:444
+msgid "Updating Kernels..."
+msgstr "Aktualizowanie jąder..."
+
+#: src/Gtk/MainWindow.vala:502
+msgid "available"
+msgstr "dostępne"
+
+#: src/Gtk/SettingsWindow.vala:12
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+#: src/Gtk/SettingsWindow.vala:24
+msgid "Done"
+msgstr "Gotowe"
+
+#: src/Gtk/SettingsWindow.vala:40
+msgid "Filter"
+msgstr "Filtr"
+
+#: src/Gtk/SettingsWindow.vala:47
+msgid "Hide RC and unstable releases"
+msgstr "Ukryj wersje RC i niestabilne"
+
+#: src/Gtk/SettingsWindow.vala:54
+msgid "Hide failed or incomplete builds"
+msgstr "Ukryj nieudane lub niekompletne kompilacje"
+
+#: src/Gtk/SettingsWindow.vala:57
+#, c-format
+msgid ""
+"If a kernel version exists on the mainline-ppa site, but is an incomplete or "
+"failed build for your arch (%s), then don't show it in the list."
+msgstr ""
+"Jeśli wersja jądra istnieje w witrynie mainline-ppa, ale jest to "
+"niekompletna lub nieudana kompilacja dla Twojej architektury (%s), nie "
+"pokazuj jej na liście."
+
+#: src/Gtk/SettingsWindow.vala:63
+#, c-format
+msgid "Hide flavors other than %s"
+msgstr "Ukryj warianty inne niż %s"
+
+#: src/Gtk/SettingsWindow.vala:66
+#, c-format
+msgid "Don't show the alternative flavors such as %s and %s"
+msgstr "Nie wyświetlaj wariantów, takich jak %s i %s"
+
+#: src/Gtk/SettingsWindow.vala:80
+msgid "prior major versions  ( -1 = all )"
+msgstr "wcześniejsze wersje główne ( -1 = wszystkie )"
+
+#: src/Gtk/SettingsWindow.vala:88
+msgid "Notification"
+msgstr "Powiadomienia"
+
+#: src/Gtk/SettingsWindow.vala:95
+msgid "Notify if a major release is available"
+msgstr "Powiadom, jeśli pojawi się wersja główna"
+
+#: src/Gtk/SettingsWindow.vala:101
+msgid "Notify if a minor release is available"
+msgstr "Powiadom, jeśli pojawi się wersja drobna"
+
+#: src/Gtk/SettingsWindow.vala:108
+msgid "Seconds interval enabled for debugging"
+msgstr "Interwał w sekundach włączony do debugowania"
+
+#: src/Gtk/SettingsWindow.vala:127
+msgid "Check every"
+msgstr "Sprawdzaj co"
+
+#: src/Gtk/SettingsWindow.vala:137
+msgid "Hours"
+msgstr "godziny"
+
+#: src/Gtk/SettingsWindow.vala:138
+msgid "Days"
+msgstr "dni"
+
+#: src/Gtk/SettingsWindow.vala:139
+msgid "Weeks"
+msgstr "tygodnie"
+
+#: src/Gtk/SettingsWindow.vala:140
+msgid "Seconds"
+msgstr "sekundy"
+
+#: src/Gtk/SettingsWindow.vala:149
+msgid "Network"
+msgstr "Sieć"
+
+#: src/Gtk/SettingsWindow.vala:159
+msgid "Connection Timeout:"
+msgstr "Limit czasu połączenia:"
+
+#: src/Gtk/SettingsWindow.vala:167
+msgid "seconds"
+msgstr "sekundy"
+
+#: src/Gtk/SettingsWindow.vala:175
+msgid "Concurrent Downloads:"
+msgstr "Jednoczesne pobieranie:"
+
+#: src/Gtk/SettingsWindow.vala:185
+msgid "Verify Checksums"
+msgstr "Weryfikuj sumy kontrolne"
+
+#: src/Gtk/SettingsWindow.vala:188
+msgid ""
+"Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
+"downloads."
+msgstr ""
+"Użyj skrótów sha-256 z pliku CHECKSUMS, aby zweryfikować pobrane pliki *.deb."
+
+#: src/Gtk/SettingsWindow.vala:192
+msgid "Keep Debs"
+msgstr "Zachowuj pakiety DEB"
+
+#: src/Gtk/SettingsWindow.vala:195
+msgid ""
+"Retain downloaded *.deb files after install and re-use them for uninstall/"
+"reinstall instead of downloading again."
+msgstr ""
+"Zachowaj pobrane pliki .deb po instalacji i użyj ich ponownie do "
+"odinstalowania/ponownej instalacji zamiast ponownego pobierania."
+
+#: src/Gtk/SettingsWindow.vala:197
+msgid ""
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
+msgstr ""
+"Są one nadal usuwane, gdy staną się starsze niż ustawienie „wcześniejsze "
+"wersje główne” lub jeśli zostały zaktualizowane w witrynie mainline-ppa."
+
+#: src/Gtk/SettingsWindow.vala:203
+msgid "Keep Cache"
+msgstr "Zachowuj pamięć podręczną"
+
+#: src/Gtk/SettingsWindow.vala:206
+msgid ""
+"Don't trim the cached index.html files to just the installed versions and "
+"higher, instead essentially maintain a local mirror of the entire history "
+"from the mainline-ppa site."
+msgstr ""
+"Nie przycinaj zapisanych w pamięci podręcznej plików index.html tylko do "
+"zainstalowanych wersji i nowszych, zamiast tego utrzymuj lokalną kopię "
+"lustrzaną całej historii z witryny mainline-ppa."
+
+#: src/Gtk/SettingsWindow.vala:208
+msgid ""
+"This speeds up some things a little at the cost of about 20M of hard drive "
+"space."
+msgstr ""
+"Przyspiesza to trochę niektóre rzeczy kosztem około 20 MB miejsca na dysku "
+"twardym."
+
+#: src/Gtk/SettingsWindow.vala:209
+msgid ""
+"It skips a step on every startup that loops through all known kernel "
+"versions just to see if there are any old ones to delete, and avoids "
+"deleting and re-downloading the same files if you change the \"prior major "
+"versions\" setting up and down."
+msgstr ""
+"Pomija krok przy każdym uruchomieniu, który przechodzi przez wszystkie znane "
+"wersje jądra, aby sprawdzić, czy są jakieś stare do usunięcia, i unika "
+"usuwania i ponownego pobierania tych samych plików, jeśli zmienisz "
+"ustawienie „wcześniejsze wersje główne\" w górę i w dół."
+
+#: src/Gtk/SettingsWindow.vala:211
+msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
+msgstr ""
+"Od wersji 6.5.x pełna pamięć podręczna ma około 22 MB, a przycięta pamięć "
+"podręczna to około 2 MB."
+
+#: src/Gtk/SettingsWindow.vala:217
+msgid "Proxy"
+msgstr "Serwer pośredniczący"
+
+#: src/Gtk/SettingsWindow.vala:229
+msgid "Mainline-PPA URL"
+msgstr "Adres URL Mainline-PPA"
+
+#: src/Gtk/SettingsWindow.vala:249
+msgid "External Commands"
+msgstr "Polecenia zewnętrzne"
+
+#: src/Gtk/SettingsWindow.vala:256
+msgid "Superuser Authorization"
+msgstr "Autoryzacja superużytkownika"
+
+#: src/Gtk/SettingsWindow.vala:278
+msgid "Command used to run dpkg with root permissions."
+msgstr ""
+"Polecenie używane do uruchamiania dpkg z uprawnieniami użytkownika root."
+
+#: src/Gtk/SettingsWindow.vala:280
+#, no-c-format
+msgid "The dpkg command is appended to the end, unless a %s is present."
+msgstr "Polecenie dpkg jest dołączane na końcu, chyba że obecny jest %s."
+
+#: src/Gtk/SettingsWindow.vala:281
+#, no-c-format
+msgid "If a %s is present, then the %s is replaced with the dpkg command."
+msgstr "Jeśli występuje %s, to %s jest zastępowany poleceniem dpkg."
+
+#: src/Gtk/SettingsWindow.vala:282 src/Gtk/SettingsWindow.vala:315
+msgid "The built-in list contains examples of both."
+msgstr "Wbudowana lista zawiera przykłady obu."
+
+#: src/Gtk/SettingsWindow.vala:284 src/Gtk/SettingsWindow.vala:321
+msgid ""
+"To modify any of the built-in default commands, just select it and edit."
+msgstr ""
+"Aby zmodyfikować dowolne z wbudowanych domyślnych poleceń, po prostu zaznacz "
+"je i edytuj."
+
+#: src/Gtk/SettingsWindow.vala:285 src/Gtk/SettingsWindow.vala:322
+msgid ""
+"The edited command is saved in the config file, the original is not changed."
+msgstr ""
+"Edytowane polecenie jest zapisywane w pliku konfiguracyjnym, oryginał nie "
+"jest zmieniany."
+
+#: src/Gtk/SettingsWindow.vala:289
+msgid "Terminal Window"
+msgstr "Okno terminala"
+
+#: src/Gtk/SettingsWindow.vala:311
+msgid "Terminal command used to run"
+msgstr "Polecenie terminala używane do uruchamiania"
+
+#: src/Gtk/SettingsWindow.vala:313
+#, no-c-format
+msgid ""
+"The install/uninstall command is appended to the end, unless a %s is present."
+msgstr ""
+"Polecenie instaluj/odinstaluj jest dołączane na końcu, chyba że istnieje %s."
+
+#: src/Gtk/SettingsWindow.vala:314
+#, no-c-format
+msgid ""
+"If a %s is present, then the %s is replaced with the install/uninstall "
+"command."
+msgstr ""
+"Jeśli obecny jest %s, wówczas %s jest zastępowany poleceniem instalacji/"
+"odinstalowania."
+
+#: src/Gtk/SettingsWindow.vala:317
+msgid ""
+"The terminal program must stay in the foreground and block while the command "
+"is running, not fork and return immediately."
+msgstr ""
+"Program terminala musi pozostać na pierwszym planie i blokować podczas "
+"wykonywania polecenia, a nie forkować i natychmiast powracać."
+
+#: src/Gtk/SettingsWindow.vala:318
+msgid ""
+"Most terminal programs block by default, some require special commandline "
+"options."
+msgstr ""
+"Większość programów terminalowych blokuje domyślnie, niektóre wymagają "
+"specjalnych opcji wiersza poleceń."
+
+#: src/Gtk/SettingsWindow.vala:319
+#, c-format
+msgid "For example, %s requires \"%s\"."
+msgstr "Na przykład %s wymaga „%s”."
+
+#: src/Gtk/TerminalWindow.vala:130
+msgid "Copy"
+msgstr "Skopiuj"
+
+#: src/Gtk/TerminalWindow.vala:138
+msgid ""
+"Copies the entire output buffer, including scrollback, to the clipboard."
+msgstr "Kopiuje cały bufor wyjściowy do schowka, w tym przewijanie."
+
+#: src/Gtk/TerminalWindow.vala:145
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/Gtk/TerminalWindow.vala:153
+msgid "Close"
+msgstr "Zamknij"

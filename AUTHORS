@@ -1,3 +1,11 @@
+Brian K. White      forked "ukuu" to "mainline" 2019-present
+Tony George         "ukuu" original author
+shg8@github         net connection check
+cloyce@github       rc kernels option
+LucasChollet@github improve thread management
 
-Copyright (C) 2013 Tony George (teejee2008@gmail.com)
+Inclusions:
+	notice.sh https://github.com/bkw777/notice.sh
 
+Translators:
+	see file TRANSLATORS

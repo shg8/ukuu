@@ -1,0 +1,908 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mainline\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:59-0400\n"
+"PO-Revision-Date: 2024-01-05 13:29+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: src/Common/LinuxKernel.vala:153
+msgid "Distribution"
+msgstr "Dağıtım"
+
+#: src/Common/LinuxKernel.vala:168
+msgid "Architecture"
+msgstr "Sistem mimarisi"
+
+#: src/Common/LinuxKernel.vala:268 src/Gtk/MainWindow.vala:499
+msgid "Running"
+msgstr "Çalışıyor"
+
+#: src/Common/LinuxKernel.vala:269
+msgid "Installed"
+msgstr "Kurulu"
+
+#: src/Common/LinuxKernel.vala:270
+msgid "Invalid"
+msgstr "Geçersiz"
+
+#: src/Common/LinuxKernel.vala:309
+msgid "loading cached pages"
+msgstr "önbelleklenmiş sayfalar yükleniyor"
+
+#: src/Common/LinuxKernel.vala:335
+msgid "queuing download"
+msgstr "kuyruğa alma indirme"
+
+#: src/Common/LinuxKernel.vala:348
+msgid "downloading new pages"
+msgstr "yeni sayfalar indiriliyor"
+
+#: src/Common/LinuxKernel.vala:362
+msgid "loading new pages"
+msgstr "yeni sayfalar yükleniyor"
+
+#: src/Common/LinuxKernel.vala:377
+msgid "Currently Running"
+msgstr "Şu Anda Çalışıyor"
+
+#: src/Common/LinuxKernel.vala:378
+msgid "Oldest Installed"
+msgstr "En Eski Kurulu"
+
+#: src/Common/LinuxKernel.vala:379
+msgid "Newest Installed"
+msgstr "En Yeni Kurulu"
+
+#: src/Common/LinuxKernel.vala:380
+msgid "Newest Available"
+msgstr "En Yeni Kullanılabilir"
+
+#: src/Common/LinuxKernel.vala:381
+msgid "Available Minor Update"
+msgstr "Küçük Güncelleme Var"
+
+#: src/Common/LinuxKernel.vala:382
+msgid "Available Major Update"
+msgstr "Büyük Güncelleme Var"
+
+#: src/Common/LinuxKernel.vala:418
+msgid "OK"
+msgstr "Tamam"
+
+#: src/Common/LinuxKernel.vala:421
+msgid "FAILED"
+msgstr "BAŞARISIZ"
+
+#: src/Common/LinuxKernel.vala:840
+msgid "Packages Available"
+msgstr "Kullanılabilir Paketler"
+
+#: src/Common/LinuxKernel.vala:847
+msgid "Packages Installed"
+msgstr "Kurulu Paketler"
+
+#: src/Common/LinuxKernel.vala:853 src/Console/AppConsole.vala:70
+#: src/Gtk/MainWindow.vala:200
+msgid "Notes"
+msgstr "Notlar"
+
+#: src/Common/LinuxKernel.vala:859
+msgid "Locked"
+msgstr "Kilitli"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "removal"
+msgstr "kaldırma"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "installation"
+msgstr "kurulum"
+
+#: src/Common/LinuxKernel.vala:861
+msgid "prevented"
+msgstr "önlendi"
+
+#: src/Common/LinuxKernel.vala:876 src/Common/LinuxKernel.vala:1018
+msgid "not found"
+msgstr "bulunamadı"
+
+#: src/Common/LinuxKernel.vala:903
+msgid "needs update"
+msgstr "güncellemeye ihtiyacı var"
+
+#: src/Common/LinuxKernel.vala:990
+msgid "Available Kernels"
+msgstr "Kullanılabilir Çekirdekler"
+
+#: src/Common/LinuxKernel.vala:1018 src/Gtk/MainWindow.vala:149
+msgid "Kernel"
+msgstr "Çekirdek"
+
+#: src/Common/LinuxKernel.vala:1038
+msgid "checksums enabled"
+msgstr "sağlama toplamları etkinleştirildi"
+
+#: src/Common/LinuxKernel.vala:1065
+#, c-format
+msgid "Downloading %s"
+msgstr "%s indiriliyor"
+
+#: src/Common/LinuxKernel.vala:1097
+msgid "Lock/Unlock: no kernels specified"
+msgstr "Kilitle/Kilidi Aç: çekirdek belirtilmemiş"
+
+#: src/Common/LinuxKernel.vala:1099
+msgid "lock"
+msgstr "kilitle"
+
+#: src/Common/LinuxKernel.vala:1100
+msgid "unlock"
+msgstr "kilidi aç"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "ok"
+msgstr "tamam"
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "failed"
+msgstr "başarısız"
+
+#: src/Common/LinuxKernel.vala:1117
+msgid "Download: no downloadable kernels specified"
+msgstr "İndir: indirilebilir çekirdek belirtilmedi"
+
+#: src/Common/LinuxKernel.vala:1138
+#, c-format
+msgid "%s is already installed"
+msgstr "%s zaten kurulu"
+
+#: src/Common/LinuxKernel.vala:1143 src/Common/LinuxKernel.vala:1191
+#: src/Common/LinuxKernel.vala:1235
+#, c-format
+msgid "%s is locked"
+msgstr "%s kilitli"
+
+#: src/Common/LinuxKernel.vala:1148
+#, c-format
+msgid "%s is invalid"
+msgstr "%s geçersiz"
+
+#: src/Common/LinuxKernel.vala:1153
+#, c-format
+msgid "%s download failed"
+msgstr "%s indirilemedi"
+
+#: src/Common/LinuxKernel.vala:1157
+#, c-format
+msgid "Installing %s"
+msgstr "%s kuruluyor"
+
+#: src/Common/LinuxKernel.vala:1161
+msgid "Install: no installable kernels specified"
+msgstr "Kur: kurulabilir çekirdek belirtilmedi"
+
+#: src/Common/LinuxKernel.vala:1186 src/Common/LinuxKernel.vala:1227
+#, c-format
+msgid "%s is running"
+msgstr "%s çalışıyor"
+
+#: src/Common/LinuxKernel.vala:1195
+#, c-format
+msgid "Uninstalling %s"
+msgstr "%s kaldırılıyor"
+
+#: src/Common/LinuxKernel.vala:1198
+msgid "found"
+msgstr "bulundu"
+
+#: src/Common/LinuxKernel.vala:1202
+msgid "Uninstall: no uninstallable packages found"
+msgstr "Kaldır: kaldırılabilir paket bulunamadı"
+
+#: src/Common/LinuxKernel.vala:1231
+#, c-format
+msgid "%s is the highest installed version"
+msgstr "%s en yüksek kurulu sürümdür"
+
+#: src/Common/LinuxKernel.vala:1243
+msgid "Could not find running kernel in list"
+msgstr "Listede çalışan çekirdek bulunamadı"
+
+#: src/Common/LinuxKernel.vala:1248
+msgid "No old kernels to uninstall"
+msgstr "Kaldırılacak eski çekirdek yok"
+
+#: src/Common/LinuxKernel.vala:1261
+msgid "No updates"
+msgstr "Güncelleme yok"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "yes",
+#. * string may be longer than one character. Examples: "Y" or "[y]"
+#: src/Common/Main.vala:123
+msgid "Y"
+msgstr "E"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "yes",
+#. * Example: "y"
+#: src/Common/Main.vala:126
+msgid "y"
+msgstr "e"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "no",
+#. * string may be longer than one character. Examples: "N" or "[n]"
+#: src/Common/Main.vala:129
+msgid "N"
+msgstr "H"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "no",
+#. * Example: "n"
+#: src/Common/Main.vala:132
+msgid "n"
+msgstr "h"
+
+#: src/Common/Main.vala:224
+msgid "Missing threads support in GLib."
+msgstr "GLib'de eksik iş parçacığı desteği."
+
+#: src/Common/Main.vala:320
+msgid "Wrote config file"
+msgstr "Yapılandırma dosyasını yazdı"
+
+#: src/Common/Main.vala:339
+msgid "No config file"
+msgstr "Yapılandırma dosyası yok"
+
+#: src/Common/Main.vala:422
+msgid "Loaded config file"
+msgstr "Yapılandırma dosyası yüklendi"
+
+#: src/Common/Main.vala:444
+msgid "Called from"
+msgstr "Çağrı konumu"
+
+#: src/Common/Main.vala:444
+msgid "at logon"
+msgstr "başlangıçta"
+
+#: src/Common/Main.vala:445
+msgid ""
+"This file is over-written and executed again whenever settings are saved in"
+msgstr ""
+"Bu dosyanın üzerine yazılır ve ayarlar her kaydedildiğinde yeniden yürütülür"
+
+#: src/Common/Main.vala:485
+msgid "Notifications are disabled"
+msgstr "Bildirimler devre dışı bırakılmış"
+
+#: src/Common/Main.vala:538
+msgid "Can not reach site"
+msgstr "Siteye ulaşılamıyor"
+
+#: src/Common/Package.vala:36
+#, c-format
+msgid "!!! Error running %s"
+msgstr "!!! %s çalışırken hata"
+
+#: src/lib/l.exec.vala:7 src/Gtk/MainWindow.vala:344
+msgid "Unable to launch"
+msgstr "Başlatılamadı"
+
+#: src/lib/l.misc.vala:9
+msgid "Continue?"
+msgstr "Devam?"
+
+#: src/Console/AppConsole.vala:31
+#, c-format
+msgid "install kernel packages from %s"
+msgstr "%s üstünden çekirdek paketlerini kurun"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "Syntax"
+msgstr "Söz dizimi"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "command"
+msgstr "komut"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "options"
+msgstr "seçenekler"
+
+#: src/Console/AppConsole.vala:35 src/Gtk/AppGtk.vala:58
+msgid "Commands"
+msgstr "Komutlar"
+
+#: src/Console/AppConsole.vala:37
+msgid "Check for kernel updates"
+msgstr "Çekirdek güncellemelerini denetle"
+
+#: src/Console/AppConsole.vala:38
+msgid "Check for kernel updates and send a desktop notification"
+msgstr "Çekirdek güncellemelerini denetle ve masaüstü bildirimi gönder"
+
+#: src/Console/AppConsole.vala:39
+msgid "List the available kernels"
+msgstr "Kullanılabilir çekirdekleri listele"
+
+#: src/Console/AppConsole.vala:40
+msgid "List the installed kernels"
+msgstr "Kurulu çekirdekleri listele"
+
+#: src/Console/AppConsole.vala:41
+msgid "Install the latest mainline kernel"
+msgstr "En son mainline çekirdeğini kur"
+
+#: src/Console/AppConsole.vala:42
+msgid "Install the latest mainline kernel without going to a new major version"
+msgstr "Yeni ana sürüme geçmeden en son mainline çekirdeğini kur"
+
+#: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
+#: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
+#: src/Console/AppConsole.vala:48
+msgid "names"
+msgstr "adlar"
+
+#: src/Console/AppConsole.vala:43
+msgid "Install the specified kernels"
+msgstr "Belirtilen çekirdekleri kur"
+
+#: src/Console/AppConsole.vala:44
+msgid "Uninstall the specified kernels"
+msgstr "Belirtilen çekirdekleri kaldır"
+
+#: src/Console/AppConsole.vala:45
+msgid "Uninstall all but the highest installed version"
+msgstr "En yüksek yüklü sürüm dışındaki tüm sürümleri kaldır"
+
+#: src/Console/AppConsole.vala:46
+msgid "Download the specified kernels"
+msgstr "Belirtilen çekirdekleri indir"
+
+#: src/Console/AppConsole.vala:47
+msgid "Lock the specified kernels"
+msgstr "Belirtilen çekirdekleri kilitle"
+
+#: src/Console/AppConsole.vala:48
+msgid "Unlock the specified kernels"
+msgstr "Belirtilen çekirdeklerin kilidini aç"
+
+#: src/Console/AppConsole.vala:49
+msgid "Delete the cached info about available kernels"
+msgstr "Kullanılabilir çekirdekler hakkında önbelleğe alınmış bilgileri sil"
+
+#: src/Console/AppConsole.vala:50
+msgid ""
+"Write the given include/exclude & previous-majors options to the config file"
+msgstr ""
+"Verilen include/exclude & previous-majors seçeneklerini yapılandırma "
+"dosyasına yaz"
+
+#: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
+msgid "This help"
+msgstr "Bu yardım"
+
+#: src/Console/AppConsole.vala:53 src/Gtk/AppGtk.vala:61
+msgid "Options"
+msgstr "Seçenekler"
+
+#: src/Console/AppConsole.vala:55
+msgid "Include release-candidate and unstable releases"
+msgstr "Sürüm adayı ve kararsız sürümleri dahil et"
+
+#: src/Console/AppConsole.vala:56
+msgid "Exclude release-candidate and unstable releases"
+msgstr "Sürüm adayı ve kararsız sürümleri dışla"
+
+#: src/Console/AppConsole.vala:57
+#, c-format
+msgid "Include flavors other than \"%s\""
+msgstr "\"%s\" dışındaki türleri dahil et"
+
+#: src/Console/AppConsole.vala:58
+#, c-format
+msgid "Exclude flavors other than \"%s\""
+msgstr "\"%s\" dışındaki türleri dışla"
+
+#: src/Console/AppConsole.vala:59
+msgid "Include failed/incomplete builds"
+msgstr "Başarısız/tamamlanmamış derlemeleri dahil et"
+
+#: src/Console/AppConsole.vala:60
+msgid "Exclude failed/incomplete builds"
+msgstr "Başarısız/tamamlanmamış derlemeleri dışla"
+
+#: src/Console/AppConsole.vala:61
+#, c-format
+msgid "Include # (or \"%s\" or \"%s\") previous major versions"
+msgstr "# (veya \"%s\" ya da \"%s\") önceki ana sürümleri dahil et"
+
+#: src/Console/AppConsole.vala:62 src/Console/AppConsole.vala:63
+#, c-format
+msgid "Short for \"%s\""
+msgstr "\"%s\" kısaltması"
+
+#: src/Console/AppConsole.vala:66
+msgid "Don't actually install or uninstall"
+msgstr "Gerçekten kurma veya kaldırma"
+
+#: src/Console/AppConsole.vala:67 src/Gtk/AppGtk.vala:62
+msgid "Set verbosity level to #, or increment by 1"
+msgstr "Ayrıntı düzeyini # olarak ayarla ya da 1 artır"
+
+#: src/Console/AppConsole.vala:68
+msgid "Pause and require keypress before exiting"
+msgstr "Duraklat ve çıkmadan önce tuşa basılmasını gerektir"
+
+#: src/Console/AppConsole.vala:71
+#, c-format
+msgid "One or more version strings taken from the output of \"%s\""
+msgstr "\"%s\" çıktısından alınan bir veya daha fazla sürüm dizgesi"
+
+#: src/Console/AppConsole.vala:72
+msgid ""
+"comma, pipe, colon, or space separated. (space requires quotes or "
+"backslashes)"
+msgstr ""
+"virgül, dikey çizgi, iki nokta üst üste veya boşlukla ayrılmış. (boşluklar "
+"tırnak veya ters eğik çizgi gerektirir)"
+
+#: src/Console/AppConsole.vala:73
+msgid "Locked kernels and the currently running kernel are ignored"
+msgstr "Kilitli çekirdekler ve şu anda çalışan çekirdek yoksayılır"
+
+#: src/Console/AppConsole.vala:83
+msgid "done"
+msgstr "tamam"
+
+#: src/Console/AppConsole.vala:84
+msgid "(press Enter to close)"
+msgstr "(kapatmak için Enter'a basın)"
+
+#: src/Console/AppConsole.vala:235
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr "Bilinmeyen seçenek \"%s\""
+
+#: src/Console/AppConsole.vala:250 src/Console/AppConsole.vala:254
+#: src/Console/AppConsole.vala:258 src/Console/AppConsole.vala:262
+#: src/Console/AppConsole.vala:267
+#, c-format
+msgid "Notice: \"%s\" has been renamed to \"%s\""
+msgstr "Uyarı: \"%s\", \"%s\" olarak yeniden adlandırıldı"
+
+#: src/Console/AppConsole.vala:271
+msgid "DRY-RUN"
+msgstr "KURU-ÇALIŞTIR"
+
+#: src/Console/AppConsole.vala:277
+#, c-format
+msgid "Deleted %s"
+msgstr "%s silindi"
+
+#: src/Console/AppConsole.vala:278
+#, c-format
+msgid "Error deleting %s"
+msgstr "%s silinerken hata"
+
+#: src/Console/AppConsole.vala:288
+#, c-format
+msgid "Wrote %s"
+msgstr "%s Yazdı"
+
+#: src/Console/AppConsole.vala:294
+msgid "Installed Kernels"
+msgstr "Kurulu Çekirdekler"
+
+#: src/Console/AppConsole.vala:300
+msgid "Notifications disabled"
+msgstr "Bildirimler devre dışı bırakılmış"
+
+#: src/Console/AppConsole.vala:304
+msgid "No"
+msgstr "Hayır"
+
+#: src/Console/AppConsole.vala:360
+msgid "Unknown command"
+msgstr "Bilinmeyen komut"
+
+#: src/Console/AppConsole.vala:379
+msgid "Latest update"
+msgstr "Son güncelleme"
+
+# Point burada point release anlamında kullanılıyor. Örneğin 5.10.x sayısının en sonundaki x rakamı point release/nokta sürüm oluyor.
+#: src/Console/AppConsole.vala:380
+msgid "Latest point update"
+msgstr "Son nokta güncellemesi"
+
+#: src/Console/AppConsole.vala:381 src/Console/AppConsole.vala:387
+msgid "No updates found"
+msgstr "Güncelleme bulunamadı"
+
+#: src/Console/AppConsole.vala:396
+msgid "notify minor releases disabled"
+msgstr "küçük sürümler için bildirimler devre dışı"
+
+#: src/Console/AppConsole.vala:404
+msgid "notify major releases disabled"
+msgstr "büyük sürümler için bildirimler devre dışı bırakıldı"
+
+#: src/Console/AppConsole.vala:408
+#, c-format
+msgid "Kernel %s Available"
+msgstr "Çekirdek %s Kullanılabilir"
+
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+msgid "Show"
+msgstr "Göster"
+
+#: src/Console/AppConsole.vala:415 src/Gtk/MainWindow.vala:328
+msgid "Install"
+msgstr "Kur"
+
+#: src/Console/AppConsole.vala:420
+msgid "Previously notified"
+msgstr "Daha önce bildirilmiş"
+
+#: src/Gtk/AppGtk.vala:94
+msgid "Unknown option"
+msgstr "Bilinmeyen seçenek"
+
+#: src/Gtk/MainWindow.vala:172
+msgid "Lock"
+msgstr "Kilitle"
+
+#: src/Gtk/MainWindow.vala:189
+msgid "Status"
+msgstr "Durum"
+
+#: src/Gtk/MainWindow.vala:333
+msgid "Uninstall"
+msgstr "Kaldır"
+
+#: src/Gtk/MainWindow.vala:339
+msgid "Changelog, build status, etc"
+msgstr "Değişiklik günlüğü, derleme durumu vb."
+
+#: src/Gtk/MainWindow.vala:348
+msgid "Uninstall Old"
+msgstr "Eskileri Kaldır"
+
+#: src/Gtk/MainWindow.vala:349
+msgid ""
+"Uninstall everything except:\n"
+"* the highest installed version\n"
+"* the currently running kernel\n"
+"* any kernels that are locked"
+msgstr ""
+"Şunlar dışında her şeyi kaldır:\n"
+"* en yüksek kurulu sürüm\n"
+"* şu anda çalışan çekirdek\n"
+"* kilitli olan herhangi bir çekirdek"
+
+#: src/Gtk/MainWindow.vala:354
+msgid "Reload"
+msgstr "Yeniden yükle"
+
+#: src/Gtk/MainWindow.vala:355
+msgid ""
+"Delete and reload all cached kernel info\n"
+"(the same as \"mainline --delete-cache\")"
+msgstr ""
+"Önbelleğe alınan tüm çekirdek bilgilerini sil ve yeniden indir\n"
+"(\"mainline --delete-cache\" ile aynı)"
+
+#: src/Gtk/MainWindow.vala:360
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: src/Gtk/MainWindow.vala:365
+msgid "About"
+msgstr "Hakkında"
+
+#: src/Gtk/MainWindow.vala:370
+msgid "Exit"
+msgstr "Çıkış"
+
+#: src/Gtk/MainWindow.vala:431
+msgid ""
+"A tool for installing kernel packages\n"
+"from the Ubuntu Mainline Kernels PPA"
+msgstr ""
+"Çekirdek paketlerini kurmak için bir araç\n"
+"Ubuntu Mainline Kernels PPA'sından"
+
+#: src/Gtk/MainWindow.vala:433
+msgid "Original"
+msgstr "Özgün"
+
+#: src/Gtk/MainWindow.vala:434
+msgid "Forked"
+msgstr "Çatallandı"
+
+#: src/Gtk/MainWindow.vala:444
+msgid "Updating Kernels..."
+msgstr "Çekirdekler Güncelleniyor..."
+
+#: src/Gtk/MainWindow.vala:502
+msgid "available"
+msgstr "kullanılabilir"
+
+#: src/Gtk/SettingsWindow.vala:12
+msgid "Configuration"
+msgstr "Yapılandırma"
+
+#: src/Gtk/SettingsWindow.vala:24
+msgid "Done"
+msgstr "Tamam"
+
+#: src/Gtk/SettingsWindow.vala:40
+msgid "Filter"
+msgstr "Süz"
+
+#: src/Gtk/SettingsWindow.vala:47
+msgid "Hide RC and unstable releases"
+msgstr "Sürüm Adayı (RC) ve kararsız sürümleri gizle"
+
+#: src/Gtk/SettingsWindow.vala:54
+msgid "Hide failed or incomplete builds"
+msgstr "Başarısız veya tamamlanmamış yapıları gizle"
+
+#: src/Gtk/SettingsWindow.vala:57
+#, c-format
+msgid ""
+"If a kernel version exists on the mainline-ppa site, but is an incomplete or "
+"failed build for your arch (%s), then don't show it in the list."
+msgstr ""
+"Mainline-ppa sitesinde bir çekirdek sürümü varsa, ancak mimariniz için "
+"tamamlanmamış veya başarısız bir derlemeyse (%s), listede gösterme."
+
+#: src/Gtk/SettingsWindow.vala:63
+#, c-format
+msgid "Hide flavors other than %s"
+msgstr "%s dışındaki türleri gizle"
+
+#: src/Gtk/SettingsWindow.vala:66
+#, c-format
+msgid "Don't show the alternative flavors such as %s and %s"
+msgstr "%s ve %s gibi alternatif türleri gösterme"
+
+#: src/Gtk/SettingsWindow.vala:80
+msgid "prior major versions  ( -1 = all )"
+msgstr "önceki büyük sürümler ( -1 = tümü )"
+
+#: src/Gtk/SettingsWindow.vala:88
+msgid "Notification"
+msgstr "Bildirim"
+
+#: src/Gtk/SettingsWindow.vala:95
+msgid "Notify if a major release is available"
+msgstr "Büyük sürüm olduğunda bildir"
+
+#: src/Gtk/SettingsWindow.vala:101
+msgid "Notify if a minor release is available"
+msgstr "Küçük sürüm olduğunda bildir"
+
+#: src/Gtk/SettingsWindow.vala:108
+msgid "Seconds interval enabled for debugging"
+msgstr "Hata ayıklama için etkinleştirilen saniye aralığı"
+
+#: src/Gtk/SettingsWindow.vala:127
+msgid "Check every"
+msgstr "Kontrol sıklığı"
+
+#: src/Gtk/SettingsWindow.vala:137
+msgid "Hours"
+msgstr "saat"
+
+#: src/Gtk/SettingsWindow.vala:138
+msgid "Days"
+msgstr "gün"
+
+#: src/Gtk/SettingsWindow.vala:139
+msgid "Weeks"
+msgstr "hafta"
+
+#: src/Gtk/SettingsWindow.vala:140
+msgid "Seconds"
+msgstr "saniye"
+
+#: src/Gtk/SettingsWindow.vala:149
+msgid "Network"
+msgstr "Ağ"
+
+#: src/Gtk/SettingsWindow.vala:159
+msgid "Connection Timeout:"
+msgstr "Bağlantı Zaman Aşımı:"
+
+#: src/Gtk/SettingsWindow.vala:167
+msgid "seconds"
+msgstr "saniye"
+
+#: src/Gtk/SettingsWindow.vala:175
+msgid "Concurrent Downloads:"
+msgstr "Eşzamanlı İndirmeler:"
+
+#: src/Gtk/SettingsWindow.vala:185
+msgid "Verify Checksums"
+msgstr "Sağlama Toplamlarını Doğrula"
+
+#: src/Gtk/SettingsWindow.vala:188
+msgid ""
+"Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
+"downloads."
+msgstr ""
+"*.deb dosyası indirmelerini doğrulamak için CHECKSUMS dosyasındaki sha-256 "
+"karmalarını kullanın."
+
+#: src/Gtk/SettingsWindow.vala:192
+msgid "Keep Debs"
+msgstr "Deb Paketlerini Tut"
+
+#: src/Gtk/SettingsWindow.vala:195
+msgid ""
+"Retain downloaded *.deb files after install and re-use them for uninstall/"
+"reinstall instead of downloading again."
+msgstr ""
+"Kurulduktan sonra indirilen .deb dosyalarını tut ve yeniden indirmek yerine "
+"kaldırma/yeniden kurulum için yeniden kullanın."
+
+#: src/Gtk/SettingsWindow.vala:197
+msgid ""
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
+msgstr ""
+"\"Önceki ana sürümler\" ayarından daha eski olduklarında ya da mainline-ppa "
+"sitesinde güncellendiklerinde silinmeye devam ederler."
+
+#: src/Gtk/SettingsWindow.vala:203
+msgid "Keep Cache"
+msgstr "Önbelleği Tut"
+
+#: src/Gtk/SettingsWindow.vala:206
+msgid ""
+"Don't trim the cached index.html files to just the installed versions and "
+"higher, instead essentially maintain a local mirror of the entire history "
+"from the mainline-ppa site."
+msgstr ""
+"Önbelleğe alınmış index.html dosyalarını yalnızca kurulu sürümler ve üstü "
+"için azaltma, bunun yerine mainline-ppa sitesindeki tüm geçmişin yerel "
+"yansısını tut."
+
+#: src/Gtk/SettingsWindow.vala:208
+msgid ""
+"This speeds up some things a little at the cost of about 20M of hard drive "
+"space."
+msgstr ""
+"Bu, yaklaşık 20Mb sabit disk alanına karşılık bazı şeyleri hızlandırır."
+
+#: src/Gtk/SettingsWindow.vala:209
+msgid ""
+"It skips a step on every startup that loops through all known kernel "
+"versions just to see if there are any old ones to delete, and avoids "
+"deleting and re-downloading the same files if you change the \"prior major "
+"versions\" setting up and down."
+msgstr ""
+"Her başlangıçta, silinecek eski sürüm olup olmadığını görmek için bilinen "
+"tüm çekirdek sürümleri arasında dolaşan bir adımı atlar ve \"önceki ana "
+"sürümler\" ayarını yukarı ve aşağı değiştirirseniz aynı dosyaları silmeyi ve "
+"yeniden indirmeyi önler."
+
+#: src/Gtk/SettingsWindow.vala:211
+msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
+msgstr ""
+"6.5.x itibariyle tam önbellek yaklaşık 22Mb ve azaltılmış önbellek yaklaşık "
+"2Mb."
+
+#: src/Gtk/SettingsWindow.vala:217
+msgid "Proxy"
+msgstr "Vekil Sunucu"
+
+#: src/Gtk/SettingsWindow.vala:229
+msgid "Mainline-PPA URL"
+msgstr "Mainline-PPA URL"
+
+#: src/Gtk/SettingsWindow.vala:249
+msgid "External Commands"
+msgstr "Harici Komutlar"
+
+#: src/Gtk/SettingsWindow.vala:256
+msgid "Superuser Authorization"
+msgstr "Süper Kullanıcı Yetkilendirmesi"
+
+#: src/Gtk/SettingsWindow.vala:278
+msgid "Command used to run dpkg with root permissions."
+msgstr "Kök izinleriyle dpkg'yi çalıştırmak için kullanılan komut."
+
+#: src/Gtk/SettingsWindow.vala:280
+#, no-c-format
+msgid "The dpkg command is appended to the end, unless a %s is present."
+msgstr "Bir %s yoksa dpkg komutu sonuna eklenir."
+
+#: src/Gtk/SettingsWindow.vala:281
+#, no-c-format
+msgid "If a %s is present, then the %s is replaced with the dpkg command."
+msgstr "Bir %s varsa, %s dpkg komutuyla değiştirilir."
+
+#: src/Gtk/SettingsWindow.vala:282 src/Gtk/SettingsWindow.vala:315
+msgid "The built-in list contains examples of both."
+msgstr "Yerleşik liste, her ikisinin de örneklerini içerir."
+
+#: src/Gtk/SettingsWindow.vala:284 src/Gtk/SettingsWindow.vala:321
+msgid ""
+"To modify any of the built-in default commands, just select it and edit."
+msgstr ""
+"Yerleşik öntanımlı komutları değiştirmek için, seçip düzenlemeniz yeterli."
+
+#: src/Gtk/SettingsWindow.vala:285 src/Gtk/SettingsWindow.vala:322
+msgid ""
+"The edited command is saved in the config file, the original is not changed."
+msgstr ""
+"Düzenlenen komut, yapılandırma dosyasına kaydedilir, özgün hali "
+"değiştirilmez."
+
+#: src/Gtk/SettingsWindow.vala:289
+msgid "Terminal Window"
+msgstr "Uçbirim Penceresi"
+
+#: src/Gtk/SettingsWindow.vala:311
+msgid "Terminal command used to run"
+msgstr "Çalıştırmak için kullanılan uçbirim komutu"
+
+#: src/Gtk/SettingsWindow.vala:313
+#, no-c-format
+msgid ""
+"The install/uninstall command is appended to the end, unless a %s is present."
+msgstr "Kur/kaldır komutu, bir %s yoksa sonuna eklenir."
+
+#: src/Gtk/SettingsWindow.vala:314
+#, no-c-format
+msgid ""
+"If a %s is present, then the %s is replaced with the install/uninstall "
+"command."
+msgstr "Bir %s mevcutsa, %s'nin yerine kur/kaldır komutu gelir."
+
+#: src/Gtk/SettingsWindow.vala:317
+msgid ""
+"The terminal program must stay in the foreground and block while the command "
+"is running, not fork and return immediately."
+msgstr ""
+"Uçbirim programı ön planda kalmalı ve komut çalışırken engellemeli, fork "
+"yapmamalı ve hemen geri dönmemelidir."
+
+#: src/Gtk/SettingsWindow.vala:318
+msgid ""
+"Most terminal programs block by default, some require special commandline "
+"options."
+msgstr ""
+"Çoğu uçbirim programı öntanımlı olarak engeller, bazıları özel komut satırı "
+"seçenekleri gerektirir."
+
+#: src/Gtk/SettingsWindow.vala:319
+#, c-format
+msgid "For example, %s requires \"%s\"."
+msgstr "Örneğin, %s \"%s\" gerektirir."
+
+#: src/Gtk/TerminalWindow.vala:130
+msgid "Copy"
+msgstr "Kopyala"
+
+#: src/Gtk/TerminalWindow.vala:138
+msgid ""
+"Copies the entire output buffer, including scrollback, to the clipboard."
+msgstr "Geri kaydırma dahil tüm çıktı arabelleğini panoya kopyalar."
+
+#: src/Gtk/TerminalWindow.vala:145
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/Gtk/TerminalWindow.vala:153
+msgid "Close"
+msgstr "Kapat"

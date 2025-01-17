@@ -1,12 +1,12 @@
-Source: mainline
+Source: BRANDING_SHORTNAME
 Section: utils
 Priority: extra
-Maintainer: Brian K. White <b.kenyon.w@gmail.com>
+Maintainer: BRANDING_AUTHORNAME <BRANDING_AUTHOREMAIL>
 Build-Depends: debhelper, valac, libgtk-3-dev, libgee-0.8-dev, libjson-glib-dev, libvte-2.91-dev, lsb-release
 Standards-Version: 4.3.0
-Homepage: https://github.com/bkw777/mainline
+Homepage: BRANDING_WEBSITE
 
-Package: mainline
+Package: BRANDING_SHORTNAME
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, aria2, lsb-release
 Recommends:

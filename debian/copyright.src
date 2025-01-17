@@ -1,8 +1,8 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mainline
-Source: <https://github.com/bkw777/mainline>
+Upstream-Name: BRANDING_SHORTNAME
+Source: <BRANDING_WEBSITE>
 
 Files: *
 Copyright:	2016-2018 Tony George <tony.george.kol@gmail.com>
-		2019 Brian K. White <b.kenyon.w@gmail.com>
+		2019 BRANDING_AUTHORNAME <BRANDING_AUTHOREMAIL>
 License: GPL-3

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Mainline Kernels
+MimeType=
+Exec=mainline-gtk
+Type=Application
+GenericName=Mainline Kernels
+Terminal=false
+Icon=mainline
+Comment=Mainline Kernels
+StartupNotify=true;
+Categories=System;
+StartupWMClass=mainline-gtk

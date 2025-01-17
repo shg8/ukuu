@@ -1,3 +1,716 @@
+mainline (1.4.10) unstable; urgency=medium
+
+  * Fix notification actions broken in 1.4.9
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 08 Mar 2024 19:01:31 -0500
+
+mainline (1.4.9) unstable; urgency=medium
+
+  * Ubuntu kernel site changed their main url
+    from https://kernel.ubuntu.com/~kernel-ppa/mainline/
+    to   https://kernel.ubuntu.com/mainline/
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 16 Oct 2023 02:22:33 -0400
+
+mainline (1.4.8) unstable; urgency=medium
+
+  * change option --save-config to command write-config
+  * remove --yes, yes-mode by default, since the auth prompt serves as a confirmation
+  * reorganize the startup sequence to avoid some dupes and some misses
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 09 Aug 2023 02:38:03 -0400
+
+mainline (1.4.7) unstable; urgency=medium
+
+  * fix uninstall command broken 1.4.6
+  * distinguish commands from options by renaming all comands from "--command" to "command"
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 08 Aug 2023 16:12:43 -0400
+
+mainline (1.4.6) unstable; urgency=medium
+
+  * add --include-all - short for "--include-rc --include-flavors --include-invalid --previous-majors all"
+  * add --exclude-all - short for "--exclude-rc --exclude-flavors --exclude-invalid --previous-majors none"
+  * localize more strings, and localize some existing ones more correctly
+  * fix bug failing to recognize installed mainline packages when the the mainline-ppa site replaces the packages you already have installed with newer ones with different datestamp in the version number
+  * busy indicator mouse cursor
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 06 Aug 2023 22:02:10 -0400
+
+mainline (1.4.5) unstable; urgency=medium
+
+  * sort list with flavors & rc versions better
+  * handle the case where the mainline-ppa site replaces the packages you already have installed with newer ones with different datestamp in the version numbers
+  * new commandline flags for the cli app
+    --include-flavors / --exclude-flavors - override the Hide Flavors config file setting
+    --include-invalid / --exclude-invalid - override the Hide Invalid config file setting
+    --previous-majors # - override the Previous Majors config file setting
+    --lock / --unlock <list> - lock or unlock the given list of kernels, same as the lock checkbox in the gui
+    --no|--dry-run - Assume No for all prompts
+  * support xfce4-terminal for external terminal
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 06 Aug 2023 02:20:01 -0400
+
+mainline (1.4.4) unstable; urgency=medium
+
+  * Fix vte child process management for vala<0.50
+    Fixes #293
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 29 Jul 2023 01:31:00 -0400
+
+mainline (1.4.3) unstable; urgency=medium
+
+  * Replace the all-on-one-page settings with a Gtk.Notebook with a page for each section
+    Settings window grew too large and this makes it smaller
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 27 Jul 2023 00:57:14 -0400
+
+mainline (1.4.2) unstable; urgency=medium
+
+  * Fix localization of notifications
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 26 Jul 2023 16:18:10 -0400
+
+mainline (1.4.1) unstable; urgency=medium
+
+  * Close some gaps in the process management in mainline-notify.sh
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 25 Jul 2023 18:28:39 -0400
+
+mainline (1.4.0) unstable; urgency=medium
+
+  * Support the other build flavors besides "generic", like "lowlatency", "generic-64k", "generic-lpae", etc
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 25 Jul 2023 04:20:18 -0400
+
+mainline (1.3.24) unstable; urgency=medium
+
+  * Replace mainline.svg with a new original work.
+    The old logo was copied from somewhere, possibly Synaptic or a theme pack.
+    It's not clear where the old logo originated, but it did not originate with ukuu.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 14 Jul 2023 12:51:04 -0400
+
+mainline (1.3.23) unstable; urgency=medium
+
+  * update notify-send.sh & notify-action.sh to notice.sh
+  * remove OSDNotify.vala
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 08 Jul 2023 12:14:52 -0400
+
+mainline (1.3.22) unstable; urgency=medium
+
+  * fix GLib warning in AsyncTask - do not try to watch or close pid if letting spawn_async() handle it
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 28 Jun 2023 16:56:57 -0400
+
+mainline (1.3.21) unstable; urgency=medium
+
+  * update notify-send.sh
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 27 Jun 2023 06:57:35 -0400
+
+mainline (1.3.20) unstable; urgency=medium
+
+  * add support for external terminal programs
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 26 Jun 2023 03:32:01 -0400
+
+mainline (1.3.19) unstable; urgency=medium
+
+  * remove AboutWindow.vala, replaced with Gtk.show_about_dialog()
+  * remove l.gtk.vala
+  * reduce and optimize DownloadManager and AsyncTask
+  * change display name to "Mainline Kernels"
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 21 Jun 2023 02:49:53 -0400
+
+mainline (1.3.18) unstable; urgency=medium
+
+  * remove all temp dirs, temp files, temp bash scripts
+    exec_sync/exec_async commands are run directly instead of building a temp bash script
+    download job list is piped to aria2c stdin instead of writing a temp file,
+    dpkg list is read from dpkg_query stdout instead of a temp file, etc
+  * remove TeeJee.ProcessHelper.vala & TeeJee.FileSystem.vala, the last remaining TeeJee library code
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 18 Jun 2023 08:05:46 -0400
+
+mainline (1.3.17) unstable; urgency=medium
+
+  * enable checksums by default
+  * fix terminal copy button truncated long lines
+  * minor appearance changes
+  * remove unused Glib timer code
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 15 Jun 2023 18:11:48 -0400
+
+mainline (1.3.16) unstable; urgency=medium
+
+  * option to include the failed builds in the list
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 14 Jun 2023 19:01:09 -0400
+
+mainline (1.3.15) unstable; urgency=medium
+
+  * TerminalWindow add a button to copy the entire terminal buffer (including scrollback) to the clipboard.
+  * TerminalWindow add ability to change the font size either by ctrl+scrollwheel or +/- buttons.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 13 Jun 2023 04:50:33 -0400
+
+mainline (1.3.14) unstable; urgency=medium
+
+  * fix downloading without checksums
+  * fix building on focal
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 12 Jun 2023 07:20:58 -0400
+
+mainline (1.3.13) unstable; urgency=medium
+
+  * improve error handling in TerminalWindow
+  * add Keep Downloads option
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 11 Jun 2023 16:17:38 -0400
+
+mainline (1.3.12) unstable; urgency=medium
+
+  * new version string parser
+    - handles more of the old & irregular versions correctly
+    - preserves more info from the version string
+      old one stripped all non-numeric text like "-dontuse", "-yakkety", etc
+      new one captures all the extra bits into version_extra
+    - mostly trying to get ready for supporting other kernel flavors than just "-generic"
+  * fix --install-latest was ignoring point updates
+  * fix display and cache handling in the case where you have rc kernels enabled,
+    install an rc kernel, and then disable rc kernels,
+    the installed rc kernel was no longer recognized as a mainline kernel
+    and displayed as a distro kernel with the dpkg package version
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 10 Jun 2023 00:30:18 -0400
+
+mainline (1.3.11) unstable; urgency=medium
+
+  * support old vte versions that need to keep using Vte.Terminal.spawn_sync
+  * add some deb build conveniences in Makefile to build for arbitrary dist
+  * support building back to xenial
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 06 Jun 2023 19:04:36 -0400
+
+mainline (1.3.10) unstable; urgency=medium
+
+  * switch from Vte.Terminal.spawn_sync to spawn_async to remove the last compiler warning
+    old version still available for now by commenting out -D VTE_ASYNC from VALACFLAGS in Makefile
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 05 Jun 2023 19:35:21 -0400
+
+mainline (1.3.9) unstable; urgency=medium
+
+  * More auth commands
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 04 Jun 2023 11:42:01 -0400
+
+mainline (1.3.8) unstable; urgency=medium
+
+  * Configurable auth command, so you can use sudo or gksudo etc instead of pkexec.
+  * Configurable mainline-ppa url.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 03 Jun 2023 09:01:23 -0400
+
+mainline (1.3.7) unstable; urgency=medium
+
+  * ditch the progress window, show progress in the status line
+  * surface/focus terminal when install/uninstall script ends (repair what it used to do long ago)
+  * save & restore the terminal window position (only the size was working)
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 03 Jun 2023 06:27:35 -0400
+
+mainline (1.3.6) unstable; urgency=medium
+
+  * debug output for system() commands
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 31 May 2023 21:07:47 -0400
+
+mainline (1.3.5) unstable; urgency=medium
+
+  * Fix a random crash caused by the progress window.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 31 May 2023 20:03:53 -0400
+
+mainline (1.3.4) unstable; urgency=medium
+
+  * fix page_uri (urls behind PPA button)
+  * more work on how the version strings are stored and compared
+  * fix uninstall-old not finding running kernel
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 30 May 2023 10:11:54 -0400
+
+mainline (1.3.3) unstable; urgency=medium
+
+  * fix threshold_major when show_previous=-1
+  * improve some version string parsing stuff
+  * fix the is_mainline test in split_version_string()
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 29 May 2023 18:58:42 -0400
+
+mainline (1.3.2) unstable; urgency=medium
+
+  * install/uninstall/download all now accept lists
+    in the gui you may select multiple kernels to instll or uninstall at once
+  * more handy -v --verbose option
+  * small speedup, figure out threshold_major earlier and use it to skip old kernels in load_index()
+  * improve the version string parsing stuff a little
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 29 May 2023 06:56:54 -0400
+
+mainline (1.3.1) unstable; urgency=medium
+
+  * just update a tooltip message - Reload does not delete user notes any more
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 25 May 2023 23:33:48 -0400
+
+mainline (1.3.0) unstable; urgency=medium
+
+  * individual kernels may be locked to prevent installing or uninstalling
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 25 May 2023 06:50:41 -0400
+
+mainline (1.2.6) unstable; urgency=medium
+
+  * move user data (notes, and the upcoming flags) out of cache so it survives Reload
+  * compare date/timestamps in the cached per-kernel indexes against the main index to detect when a kernel build status changes after we've cached it, and invalidate & reload the cache for that kernel without having to reload all
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 22 May 2023 17:27:38 -0400
+
+mainline (1.2.5) unstable; urgency=medium
+
+  * actually do what 1.2.4 claimed
+    - support bionic by setting debian/compat < 13
+    - support bionic, focal, and any other systems with glib-json-1.0 < 1.6
+    - use glib-json >= 1.6 get_*_member_with_default() if available
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 15 Apr 2023 12:29:48 -0400
+
+mainline (1.2.4) unstable; urgency=medium
+
+  * restore bionic support
+    - debian/compat < 13
+    - glib-json-1.0 < 1.6
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 12 Apr 2023 18:54:24 -0400
+
+mainline (1.2.3) unstable; urgency=medium
+
+  * make the Notes column sortable
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 07 Apr 2023 14:10:40 -0400
+
+mainline (1.2.2) unstable; urgency=medium
+
+  * un-bork the notification available version logic, again
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 06 Apr 2023 18:59:49 -0400
+
+mainline (1.2.1) unstable; urgency=medium
+
+  * improve the logic for determining if a new kernel is available
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 04 Apr 2023 18:05:01 -0400
+
+mainline (1.2.0) unstable; urgency=medium
+
+  * NOTES!
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 04 Apr 2023 07:58:52 -0400
+
+mainline (1.1.11) unstable; urgency=medium
+
+  * update translations
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 02 Apr 2023 07:07:30 -0400
+
+mainline (1.1.10) unstable; urgency=medium
+
+  * bugfix - when verify_checksums disabled, fixes github.com/bkw777/mainline/issues/215
+
+ -- Brian K. White <bkw@fw>  Sun, 02 Apr 2023 02:16:47 -0400
+
+mainline (1.1.9) unstable; urgency=medium
+
+  * CHECKSUMS - new config option verify_checksums. When true, downloads the
+    CHECKSUMS file before downloading .deb files, extracts the sha256 hashes,
+    and uses them to verify the .deb file downloads.
+
+  * Improved config file and built-in defaults handling
+
+  * Improved notification script reliability.
+
+  * Removed CHANGES file and button. It's essentially redundant with the PPA button, and slows down the cache updates.
+
+  * Add Notes button. Creates/opens notes.txt in individual kernel's cache subdirectory
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 01 Apr 2023 15:22:51 -0400
+
+mainline (1.1.8) unstable; urgency=medium
+
+  * make load_app_config() more resilient
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 19 Mar 2023 16:55:36 -0400
+
+mainline (1.1.7) unstable; urgency=medium
+
+  * fix detect notification settings change on exit missed notify_minor
+  * apply proxy setting to net connection test
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 14 Mar 2023 10:41:24 -0400
+
+mainline (1.1.6) unstable; urgency=medium
+
+  * fix save_app_config() broken in 1.1.5
+    fixes "Can not reach" https://github.com/bkw777/mainline/issues/204 & 206
+  * replace TeeJee.logging.vala, log_*(), & LOG_DEBUG=bool LOG_ENABLE=bool bools with l.misc.vala, vprint(), and VERBOSE=int
+    VERBOSE=int to set various verbosity levels instead of just debug on/off
+    environment variable VERBOSE to effect before commandline is parsed
+  * replace TeeJee print_progress_bar() with l.misc pbar()
+    clean up progress display
+  * stop the background notification instance and the users interactive instance from stepping on each other's cache operations on startup
+    main index download gets unique temp name
+    only launch notify-loop.sh immediately on config save if notifications were turned off
+    if notification on, then only launch the background loop on exit
+  * save & restore the terminal window dimensions (but not yet the position)
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 14 Mar 2023 07:18:37 -0400
+
+mainline (1.1.5) unstable; urgency=medium
+
+  * Add proxy setting
+  * Jonas Gorski <jonas.gorski@gmail.com> fix "--install-point" broken by d7943e5
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 10 Mar 2023 15:14:55 -0500
+
+mainline (1.1.4) unstable; urgency=medium
+
+  * fix name/version matching for installed non-mainline packages
+    fixes https://github.com/bkw777/mainline/issues/141
+  * fix the progress window progress indication
+  * don't update_dpkg_list() twice for no reason
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 10 Mar 2023 02:03:35 -0500
+
+mainline (1.1.3) unstable; urgency=medium
+
+  * Removed aptitude dependency. Now only needs dpkg.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Thu, 09 Mar 2023 06:06:59 -0500
+
+mainline (1.1.2) unstable; urgency=medium
+
+  * dir_delete() replace system("rm -rf ...") with native code
+  * uninstall-old look at latest installed version instead of currently running version
+  * change the logic for determining the oldest version to display.
+    threshold_major = whichever is lower: latest_available-previous_majors or oldest_installed
+    
+    So you can keep show_N_previous_majors set at 0 to show only the most recent kernels by default,
+    yet still have access to all the kernels from your oldest installed kernel and up.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Wed, 08 Mar 2023 03:51:23 -0500
+
+mainline (1.1.1) unstable; urgency=medium
+
+  * replaced deprecated Gtk.show_uri() and xdg_open() with new uri_open()
+  * added PPA button to load the selected kernel's page from the mainline-ppa site
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 06 Mar 2023 02:43:44 -0500
+
+mainline (1.1.0) unstable; urgency=medium
+
+  * replaced the refresh button with reload
+    reload button does a full delete_cache() when pressed, same as --clean-cache flag
+    reload button clears the state flags: index_is_fresh, connection_checked, neterr_shown
+
+  * improved cache handling
+    - don't delete or re-download the cache indexes any more than necessary
+    - download the main index only once on startup
+    - download the individual kernel indexes only when one doesn't exist
+    - internal-use commandline option --index-is-fresh
+      when the console app is being run by the gtk app, the gtk app adds this, which
+      tells the console app not to update the cache on startup, since the gtk app has
+      has done that already.
+    - more thourough tracking of when to clear and redraw the list so that it always reflects the current state
+    - preserve old indexes if automatic download at startup fails
+      but do erase it if either --delet-cache or reload button
+
+  * improve net connection checks
+    - removed skip_internet_connection_check setting
+    - test connection on actual main index uri
+    - remember the result for the rest of the session and only bother the user once (except reload)
+
+  * renamed a few cmdline flags, old names still accepted for backwards compatibility
+    --clean-cache -> --delete-cache  - also, you should rarely need this now, because the reload button does it
+    --show-unstable -> --include-unstable
+    --hide-unstable -> --exclude-unstable
+
+  * replaced gtk_messagbox() based on CustomMessageDialog.vala with errbox() based on simpler Gtk.MessageDialog
+    deleted entire CustomMessageDialog.vala
+
+  * resolved several compiler warnings, some from deleting gtk_messagbox(), some from updating Thread<T> creation method
+
+  * added "exit" button to main gui
+
+  * moved the mainlin-ppa uri into the config file so the user can edit
+    not exposed in the settings dialog, but you can edit config.json
+
+  * save & restore the window size & position
+
+  * removed --user
+    it was always broken as all it did was change the path to the cache & config files without actually changing euid etc
+
+  * added several debug messages
+
+  * removed more un-used code, refactored some more away too.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 04 Mar 2023 17:08:21 -0500
+
+mainline (1.0.22) unstable; urgency=medium
+
+  * revert missed gvfs dep in internet connection check
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 25 Feb 2023 00:31:25 -0500
+
+mainline (1.0.21) UNRELEASED; urgency=medium
+
+  * revert FileDownloader due to undesired gvfs requirement
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 24 Feb 2023 00:31:25 -0500
+
+mainline (1.0.20) UNRELEASED; urgency=medium
+
+  * Lucas CHOLLET <lucas.chollet@free.fr> replace aria2c shell scripts with FileDownloader using gio
+  * don't use "env -C", old systems don't have it
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 21 Feb 2023 10:40:53 -0500
+
+mainline (1.0.19) unstable; urgency=medium
+
+  * Lucas CHOLLET <lucas.chollet@free.fr> remove busy-waiting/polling in LinuxKernel.query() and "Refreshing" dialog
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 14 Feb 2023 03:48:56 -0500
+
+mainline (1.0.18) unstable; urgency=medium
+
+  * fix small list-update bug inroduced in 1.0.17
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 11 Nov 2022 23:05:01 -0500
+
+mainline (1.0.17) unstable; urgency=medium
+
+  * sylt@github - better scheme for lowest major kernel version to show in list -> lowest installed kernel version
+    "show previous N majors" setting now subtracts from whatever that produces rather than absolute current highest major version
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 11 Nov 2022 20:53:39 -0500
+
+mainline (1.0.16) unstable; urgency=medium
+
+  * Don't consider a new major kernel version to exist yet if there are no successful builds in it yet.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 23 Aug 2022 18:07:53 -0400
+
+mainline (1.0.15) unstable; urgency=medium
+
+  * Rename "Purge" to "Uninstall Old"
+  * Avoid redundant password prompts when uninstalling multiple
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 14 Sep 2021 16:46:07 -0400
+
+mainline (1.0.14) unstable; urgency=medium
+
+  * Remove unnecessary VERSION_INT and build-time dependency for "bc"
+  * Fix a segfault if no mainline kernels installed
+  * Allow /tmp to be mounted with noexec
+  * Replace --show-unstable with --include-unstable and --hide-unstable, and correct --help
+  * Support building on valac < 0.40 (xenial)
+
+ -- Brian K. White <b.kenyon.w@gmail.com> Fri, 13 Aug 2021 15:39:15 -0400
+
+mainline (1.0.13) unstable; urgency=medium
+
+  * Improve some kernel and/or package version number string handling and comparison logic
+  * Improve tracking which update notifications have been seen/acknowledged, track major & minor updates separately
+  * https downloads
+  * New Italian translation. Updated French, Dutch, Ukranian, Turkish
+  * Temporarily disabled the "Changes" button. The ubuntu kernel-ppa site changed the way they provide changelog info.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 18 Dec 2020 14:54:22 -0500
+
+mainline (1.0.12) unstable; urgency=medium
+
+  * Improve notify-send.sh, notify-action.sh, and notify-loop.sh some more
+  Replaced all remaining unecessary shubshells with direct varible operations
+  Went over all the quoting of variables, filenames, and globbing patterns
+  Use $XDG_RUNTIME_DIR instead of /tmp if available
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sun, 24 May 2020 18:08:31 -0400
+
+mainline (1.0.11) unstable; urgency=medium
+
+  * Resolved several issues with notifications bacground processes and temp files
+  * Removed redundant notification setting, since now the desktop notifications are the only kind
+  * The background notification loop is restarted any time settings are saved in the app
+  so the settings now take effect immediately.
+  * When a new notifications is sent which replaces an existing notification,
+  it no longer adds more dbus monitor processes with each new update.
+  * Logging out and back in no longer adds more notify.sh processes. It still doesn't exit when you log out,
+  but at least it kills it's old instance when starting a new instance at logon.
+  * notify-send.sh and notify-action.sh are completely re-written and refactored to be more efficient and more reliable.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 23 May 2020 00:05:21 -0400
+
+mainline (1.0.10) unstable; urgency=medium
+
+  * Notifications
+  When any action button pressed, close the notification
+  Once a notification for a given kernel has been sent, don't notify for that kernel again during the same login session
+  * Don't run check_updates() twice for no reason
+  * Expose concurrent_downloads as a configurable setting
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 19 May 2020 17:32:48 -0400
+
+mainline (1.0.9) unstable; urgency=medium
+
+  * Slick new desktop notifications with action buttons thanks to https://github.com/vlevit/notify-send.sh
+  * Fix many bugs wrt temp directories & file permissions
+  * un-hardcode "/usr" in various paths to installed files
+  * Added some quasi-hidden extra functionality in Settings if --debug
+  * Several fixes to the version string parsing and show/hide behavior
+  detect correct update available for notifications with -rc kernels enabled
+  don't hide a -rc kernel if it's installed, even if -rc kernels are disabled
+  don't notify for an installed kernel, whether it's running or not
+  for "available", compare highest installed kernel not running kernel
+  * Refactor much of Utils/*.vala out of existence
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Mon, 18 May 2020 20:41:52 -0400
+
+mainline (1.0.8) unstable; urgency=medium
+
+  * Don't hide the terminal window from the taskbar or pager
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 05 May 2020 22:07:47 -0400
+
+mainline (1.0.7) unstable; urgency=medium
+
+  * Delete .deb files after successful install, so cache/tmp doesn't just grow forever
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 02 May 2020 23:56:09 -0400
+
+mainline (1.0.6) unstable; urgency=medium
+
+  * generate translator credits from .po files
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 21 Apr 2020 15:26:27 -0400
+
+mainline (1.0.5) unstable; urgency=medium
+
+  * remove a little more unused code
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Tue, 14 Jan 2020 14:09:47 -0500
+
+mainline (1.0.4) unstable; urgency=medium
+  * Support vala 0.46 / Uubuntu 20.04
+    copy fix from https://gitlab.manjaro.org/applications/pamac/issues/649
+    Fill in a few missing dependencies (README.md.src, debian/control.src)
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 04 Jan 2020 03:58:01 -0500
+
+mainline (1.0.3) unstable; urgency=medium
+  * Change setting kernel_version_threshold to show_prev_majors
+    Instead of saying hide kernels older than major version N, where the user has to periodically increase N manually,
+    Now the setting says, hide kernels older than major version (CURRENT_HIGHEST minus N), where CURRENT_HIGHEST is determined on the fly every time, and N can stay the same 0 or 1 etc forever.
+    All of the current highest major version is always shown. The setting says how many previous major versions to add to that.
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Sat, 04 Jan 2020 01:13:54 -0500
+
+mainline (1.0.2) unstable; urgency=medium
+  * Makefile:
+    - Use one variable style everywhere
+    - Only regenerate .pot file if any source files changed
+    - Only regenerate .po files if .pot file changed
+    - Only rebuild .deb if any files changed
+    - Automatically run dch to edit debian/changelog when needed
+    - New $(BUILD_NUMBER) for deb filename
+    - New target "release_deb"
+      o automatic increment build number
+      o automatic reset build number when pkg_version changes
+      o unconditional full "make clean deb" every time
+      Allows to generate updated deb files with icrementing filenames without having to update pkg version
+    - Get most targets other than "release_deb" to properly do nothing unless something actually changed.
+      Example, run "make deb" twice in a row with no changes, the 2nd one will say "nothing to do"
+    The Makefile is now officially more feature rich and robust than the application itself ¯\_(ツ)_/¯
+  * Desktop icon fix for Wayland from Hugo Posnic <hugo.posnic@gmail.com>
+  * Ukranian translation - github:cappelikan
+  * Change setting: bool hide_older to int kernel_version_threshold
+    hide_older was a toggel on/off to hide kernel major versions older than a hardcoded value of 4
+    kernel_version_threshold is an integer, hide kernel major versions older than this value
+
+ -- Brian K. White <b.kenyon.w@gmail.com>  Fri, 03 Jan 2020 18:01:59 -0500
+
+mainline (1.0.1) unstable; urgency=medium
+  * Disabled buggy progress bar
+  * Add missing translators on credits window
+
+ -- Brian K. White <bw.aljex@gmail.com>  Mon, 18 Mar 2019 09:10:23 -0400
+
+mainline (1.0.0) disco; urgency=medium
+
+  * Rename project from "ukuu" to "mainline"
+  * Start version number over at 1.0.0
+  * Much reoganizing of source files
+  * Removed confliciting LICENCE.md, COPYING, and text in debian/copyright
+    COPYING had GPL3
+    LICENSE.md had LGPL2
+    debian/copyright had GPL2+
+    Asserting only GPL3 going forward
+  * Reformatted AUTHORS file per gnu.org example
+
+ -- Brian K. White <bw.aljex@gmail.com>  Sat, 16 Mar 2019 04:34:40 -0400
+
+ukuu (18.9.5-bkw) disco; urgency=medium
+  * More un-hardcoding branding/name/maintainer strings in source files
+    ukuu.desktop, debian/control, debian/copyright, ukuu.policy all generated from BRANDING.mak
+  * Remove build-deb.sh and build-source.sh
+    Now we have "make deb"
+  * Removed some more source cruft, stuff we aren't using from TeeJee utilities
+  * Updated the Spanish translation just from google translate.
+  * Remove ukuu-uninstall
+  * Make aria2 retry a few times
+  * Remove pointless curl dependency by using aria2c for connection test
+
+ -- Brian K. White <bw.aljex@gmail.com>  Wed, 13 Mar 2019 2:35:02 -0500
+
+ukuu (18.9.4-bkw) disco; urgency=medium
+  * Removed all grub options
+  * Fix formatting in per-kernel package list tooltip
+  * Clean up README.md
+  * Removed build-installers.sh and other references to sanity *.run installers
+  * Relocate config.json & ukuu-notify.sh to .config/ukuu/ dir
+  * Moved branding to BRANDING.mak so other scripts can read it too
+  * Removed all hard-coding from build-deb.sh & build-source.sh
+  * Turkish translation (github/kelebek333)
+  * Remove misc cruft
+
+ -- Brian K. White <bw.aljex@gmail.com>  Mon, 11 Mar 2019 17:50:38 -0500
+
+
+ukuu (18.9.3-bkw) cosmic; urgency=medium
+
+  * Fork from http://github.com/stevenpowerd/ukuu
+  * Merge http://github.com/cloyce/ukuu
+  * Remove references to paid version
+  * Remove donation window and other donation links
+  * Fix compile error
+  * Update Readme.md
+  * Branding - Change all branding strings to variables derived from makefile
+
+ -- Brian K. White <bw.aljex@gmail.com>  Fri, 8 Mar 2019 22:57:57 -0500
+
+
 ukuu (18.9.3) xenial; urgency=medium
 
   * Fix build issue
@@ -159,15 +872,15 @@ ukuu (16.12) trusty; urgency=medium
   * Remove startup scripts when application is uninstalled
 
  -- Tony George <tony.george.kol@gmail.com>  Wed, 7 Dec 2016 10:00:00 +0530
- 
- 
+
+
 ukuu (16.11.1) trusty; urgency=medium
 
   * Fixed build for xenial: Added dependency for 'valac'
 
  -- Tony George <tony.george.kol@gmail.com>  Sun, 27 Nov 2016 10:00:00 +0530
 
- 
+
 ukuu (16.11) trusty; urgency=medium
 
   * Changed main window layout

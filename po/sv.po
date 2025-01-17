@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mainline\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-16 01:53-0400\n"
+"PO-Revision-Date: 2018-01-13 16:56+0100\n"
+"Last-Translator: Åke Engelbrektson <eson@svenskasprakfiler.se>\n"
+"Language-Team:Swedish\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/Common/LinuxKernel.vala:153
+msgid "Distribution"
+msgstr "Distribution"
+
+#: src/Common/LinuxKernel.vala:168
+msgid "Architecture"
+msgstr "Arkitektur"
+
+#: src/Common/LinuxKernel.vala:268 src/Gtk/MainWindow.vala:499
+msgid "Running"
+msgstr "Pågående"
+
+#: src/Common/LinuxKernel.vala:269
+msgid "Installed"
+msgstr "Installerad"
+
+#: src/Common/LinuxKernel.vala:270
+msgid "Invalid"
+msgstr "Ogiltig"
+
+#: src/Common/LinuxKernel.vala:309
+msgid "loading cached pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:335
+msgid "queuing download"
+msgstr "köbildning nedladdning"
+
+#: src/Common/LinuxKernel.vala:348
+msgid "downloading new pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:362
+msgid "loading new pages"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:377
+msgid "Currently Running"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:378
+msgid "Oldest Installed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:379
+msgid "Newest Installed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:380
+msgid "Newest Available"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:381
+msgid "Available Minor Update"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:382
+msgid "Available Major Update"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:418
+msgid "OK"
+msgstr "OK"
+
+#: src/Common/LinuxKernel.vala:421
+msgid "FAILED"
+msgstr "MISSLYCKADES"
+
+#: src/Common/LinuxKernel.vala:840
+msgid "Packages Available"
+msgstr "Tillgängliga paket"
+
+#: src/Common/LinuxKernel.vala:847
+msgid "Packages Installed"
+msgstr "Installerade paket"
+
+#: src/Common/LinuxKernel.vala:853 src/Console/AppConsole.vala:70
+#: src/Gtk/MainWindow.vala:200
+msgid "Notes"
+msgstr "Anteckningar"
+
+#: src/Common/LinuxKernel.vala:859
+msgid "Locked"
+msgstr "Låst"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "removal"
+msgstr "borttagning"
+
+#: src/Common/LinuxKernel.vala:860
+msgid "installation"
+msgstr "installation"
+
+#: src/Common/LinuxKernel.vala:861
+msgid "prevented"
+msgstr "förhindras"
+
+#: src/Common/LinuxKernel.vala:876 src/Common/LinuxKernel.vala:1018
+msgid "not found"
+msgstr "hittades inte"
+
+#: src/Common/LinuxKernel.vala:903
+msgid "needs update"
+msgstr "behöver uppdateras"
+
+#: src/Common/LinuxKernel.vala:990
+msgid "Available Kernels"
+msgstr "Tillgängliga kärnor"
+
+#: src/Common/LinuxKernel.vala:1018 src/Gtk/MainWindow.vala:149
+msgid "Kernel"
+msgstr "Kärna"
+
+#: src/Common/LinuxKernel.vala:1038
+msgid "checksums enabled"
+msgstr "kontrollsummor aktiverade"
+
+#: src/Common/LinuxKernel.vala:1065
+#, c-format
+msgid "Downloading %s"
+msgstr "Laddar ner %s"
+
+#: src/Common/LinuxKernel.vala:1097
+msgid "Lock/Unlock: no kernels specified"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1099
+msgid "lock"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1100
+msgid "unlock"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "ok"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1105
+msgid "failed"
+msgstr ""
+
+#: src/Common/LinuxKernel.vala:1117
+msgid "Download: no downloadable kernels specified"
+msgstr "Ladda ner: inga nedladdningsbara kärnor har angetts"
+
+#: src/Common/LinuxKernel.vala:1138
+#, c-format
+msgid "%s is already installed"
+msgstr "%s är redan installerat"
+
+#: src/Common/LinuxKernel.vala:1143 src/Common/LinuxKernel.vala:1191
+#: src/Common/LinuxKernel.vala:1235
+#, c-format
+msgid "%s is locked"
+msgstr "%s är låst"
+
+#: src/Common/LinuxKernel.vala:1148
+#, c-format
+msgid "%s is invalid"
+msgstr "%s är ogiltig"
+
+#: src/Common/LinuxKernel.vala:1153
+#, c-format
+msgid "%s download failed"
+msgstr "%s nedladdning misslyckades"
+
+#: src/Common/LinuxKernel.vala:1157
+#, c-format
+msgid "Installing %s"
+msgstr "Installerar %s"
+
+#: src/Common/LinuxKernel.vala:1161
+msgid "Install: no installable kernels specified"
+msgstr "Installera: inga installerade kärnor har angetts"
+
+#: src/Common/LinuxKernel.vala:1186 src/Common/LinuxKernel.vala:1227
+#, c-format
+msgid "%s is running"
+msgstr "%s körs"
+
+#: src/Common/LinuxKernel.vala:1195
+#, c-format
+msgid "Uninstalling %s"
+msgstr "Avinstallerar %s"
+
+#: src/Common/LinuxKernel.vala:1198
+msgid "found"
+msgstr "grunda"
+
+#: src/Common/LinuxKernel.vala:1202
+msgid "Uninstall: no uninstallable packages found"
+msgstr "Avinstallera: inga avinstallerbara paket hittades"
+
+#: src/Common/LinuxKernel.vala:1231
+#, c-format
+msgid "%s is the highest installed version"
+msgstr "%s är den högst installerade versionen"
+
+#: src/Common/LinuxKernel.vala:1243
+msgid "Could not find running kernel in list"
+msgstr "Det gick inte att hitta kernel som körs i listan"
+
+#: src/Common/LinuxKernel.vala:1248
+msgid "No old kernels to uninstall"
+msgstr "Inga gamla kärnor att avinstallera"
+
+#: src/Common/LinuxKernel.vala:1261
+msgid "No updates"
+msgstr "Inga uppdateringar"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "yes",
+#. * string may be longer than one character. Examples: "Y" or "[y]"
+#: src/Common/Main.vala:123
+msgid "Y"
+msgstr "J"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "yes",
+#. * Example: "y"
+#: src/Common/Main.vala:126
+msgid "y"
+msgstr "j"
+
+#. Translators: uppercase, or otherwise emphasized, display version of a single character for "no",
+#. * string may be longer than one character. Examples: "N" or "[n]"
+#: src/Common/Main.vala:129
+msgid "N"
+msgstr "N"
+
+#. Translators: lowercase, or otherwise not-emphasized, single keypress user response for "no",
+#. * Example: "n"
+#: src/Common/Main.vala:132
+msgid "n"
+msgstr "n"
+
+#: src/Common/Main.vala:224
+msgid "Missing threads support in GLib."
+msgstr ""
+
+#: src/Common/Main.vala:320
+msgid "Wrote config file"
+msgstr "Skrev konfigurationsfil"
+
+#: src/Common/Main.vala:339
+msgid "No config file"
+msgstr "Ingen konfigurationsfil"
+
+#: src/Common/Main.vala:422
+msgid "Loaded config file"
+msgstr "Laddad konfigurationsfil"
+
+#: src/Common/Main.vala:444
+msgid "Called from"
+msgstr "Ringde från"
+
+#: src/Common/Main.vala:444
+msgid "at logon"
+msgstr "vid start"
+
+#: src/Common/Main.vala:445
+msgid ""
+"This file is over-written and executed again whenever settings are saved in"
+msgstr "Den här filen skrivs över och körs igen när inställningar sparas i"
+
+#: src/Common/Main.vala:485
+msgid "Notifications are disabled"
+msgstr "Meddelanden är inaktiverade"
+
+#: src/Common/Main.vala:538
+msgid "Can not reach site"
+msgstr "Kan inte nå webbplatsen"
+
+#: src/Common/Package.vala:36
+#, c-format
+msgid "!!! Error running %s"
+msgstr ""
+
+#: src/lib/l.exec.vala:7 src/Gtk/MainWindow.vala:344
+msgid "Unable to launch"
+msgstr "Oförmögen att starta"
+
+#: src/lib/l.misc.vala:9
+msgid "Continue?"
+msgstr "Fortsätta?"
+
+#: src/Console/AppConsole.vala:31
+#, c-format
+msgid "install kernel packages from %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "Syntax"
+msgstr "Syntax"
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "command"
+msgstr ""
+
+#: src/Console/AppConsole.vala:33 src/Gtk/AppGtk.vala:56
+msgid "options"
+msgstr "alternativ"
+
+#: src/Console/AppConsole.vala:35 src/Gtk/AppGtk.vala:58
+msgid "Commands"
+msgstr "Kommandon"
+
+#: src/Console/AppConsole.vala:37
+msgid "Check for kernel updates"
+msgstr "Sök efter kärnuppdateringar"
+
+#: src/Console/AppConsole.vala:38
+msgid "Check for kernel updates and send a desktop notification"
+msgstr "Sök efter kärnuppdateringar och skicka ett skrivbordsmeddelande"
+
+#: src/Console/AppConsole.vala:39
+msgid "List the available kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:40
+msgid "List the installed kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:41
+msgid "Install the latest mainline kernel"
+msgstr ""
+
+#: src/Console/AppConsole.vala:42
+msgid "Install the latest mainline kernel without going to a new major version"
+msgstr ""
+
+#: src/Console/AppConsole.vala:43 src/Console/AppConsole.vala:44
+#: src/Console/AppConsole.vala:46 src/Console/AppConsole.vala:47
+#: src/Console/AppConsole.vala:48
+msgid "names"
+msgstr ""
+
+#: src/Console/AppConsole.vala:43
+msgid "Install the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:44
+msgid "Uninstall the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:45
+msgid "Uninstall all but the highest installed version"
+msgstr "Avinstallera alla utom den högsta installerade versionen"
+
+#: src/Console/AppConsole.vala:46
+msgid "Download the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:47
+msgid "Lock the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:48
+msgid "Unlock the specified kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:49
+msgid "Delete the cached info about available kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:50
+msgid ""
+"Write the given include/exclude & previous-majors options to the config file"
+msgstr ""
+
+#: src/Console/AppConsole.vala:51 src/Gtk/AppGtk.vala:59
+msgid "This help"
+msgstr "Denna hjälp"
+
+#: src/Console/AppConsole.vala:53 src/Gtk/AppGtk.vala:61
+msgid "Options"
+msgstr "Alternativ"
+
+#: src/Console/AppConsole.vala:55
+msgid "Include release-candidate and unstable releases"
+msgstr ""
+
+#: src/Console/AppConsole.vala:56
+msgid "Exclude release-candidate and unstable releases"
+msgstr ""
+
+#: src/Console/AppConsole.vala:57
+#, c-format
+msgid "Include flavors other than \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:58
+#, c-format
+msgid "Exclude flavors other than \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:59
+msgid "Include failed/incomplete builds"
+msgstr ""
+
+#: src/Console/AppConsole.vala:60
+msgid "Exclude failed/incomplete builds"
+msgstr ""
+
+#: src/Console/AppConsole.vala:61
+#, c-format
+msgid "Include # (or \"%s\" or \"%s\") previous major versions"
+msgstr ""
+
+#: src/Console/AppConsole.vala:62 src/Console/AppConsole.vala:63
+#, c-format
+msgid "Short for \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:66
+msgid "Don't actually install or uninstall"
+msgstr ""
+
+#: src/Console/AppConsole.vala:67 src/Gtk/AppGtk.vala:62
+msgid "Set verbosity level to #, or increment by 1"
+msgstr ""
+
+#: src/Console/AppConsole.vala:68
+msgid "Pause and require keypress before exiting"
+msgstr ""
+
+#: src/Console/AppConsole.vala:71
+#, c-format
+msgid "One or more version strings taken from the output of \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:72
+msgid ""
+"comma, pipe, colon, or space separated. (space requires quotes or "
+"backslashes)"
+msgstr ""
+"kommatecken, pipa, kolon eller mellanslag separerade. (mellanslag kräver "
+"citattecken eller snedstreck)"
+
+#: src/Console/AppConsole.vala:73
+msgid "Locked kernels and the currently running kernel are ignored"
+msgstr "Låsta kärnor och den aktuella kärnan ignoreras"
+
+#: src/Console/AppConsole.vala:83
+msgid "done"
+msgstr "klart"
+
+#: src/Console/AppConsole.vala:84
+msgid "(press Enter to close)"
+msgstr ""
+
+#: src/Console/AppConsole.vala:235
+#, c-format
+msgid "Unknown option \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:250 src/Console/AppConsole.vala:254
+#: src/Console/AppConsole.vala:258 src/Console/AppConsole.vala:262
+#: src/Console/AppConsole.vala:267
+#, c-format
+msgid "Notice: \"%s\" has been renamed to \"%s\""
+msgstr ""
+
+#: src/Console/AppConsole.vala:271
+msgid "DRY-RUN"
+msgstr ""
+
+#: src/Console/AppConsole.vala:277
+#, c-format
+msgid "Deleted %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:278
+#, c-format
+msgid "Error deleting %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:288
+#, c-format
+msgid "Wrote %s"
+msgstr ""
+
+#: src/Console/AppConsole.vala:294
+msgid "Installed Kernels"
+msgstr ""
+
+#: src/Console/AppConsole.vala:300
+msgid "Notifications disabled"
+msgstr "Aviseringar inaktiverade"
+
+#: src/Console/AppConsole.vala:304
+msgid "No"
+msgstr "Nej"
+
+#: src/Console/AppConsole.vala:360
+msgid "Unknown command"
+msgstr "Okänt kommando"
+
+#: src/Console/AppConsole.vala:379
+msgid "Latest update"
+msgstr "Senaste uppdatering"
+
+#: src/Console/AppConsole.vala:380
+msgid "Latest point update"
+msgstr "Senaste punktuppdatering"
+
+#: src/Console/AppConsole.vala:381 src/Console/AppConsole.vala:387
+msgid "No updates found"
+msgstr "Inga uppdateringar hittades"
+
+#: src/Console/AppConsole.vala:396
+msgid "notify minor releases disabled"
+msgstr ""
+
+#: src/Console/AppConsole.vala:404
+msgid "notify major releases disabled"
+msgstr "aviseringar för större versioner inaktiverade"
+
+#: src/Console/AppConsole.vala:408
+#, c-format
+msgid "Kernel %s Available"
+msgstr "Kernel %s tillgängliga"
+
+#: src/Console/AppConsole.vala:414 src/Gtk/SettingsWindow.vala:74
+msgid "Show"
+msgstr "Visa"
+
+#: src/Console/AppConsole.vala:415 src/Gtk/MainWindow.vala:328
+msgid "Install"
+msgstr "Installera"
+
+#: src/Console/AppConsole.vala:420
+msgid "Previously notified"
+msgstr "Tidigare anmält"
+
+#: src/Gtk/AppGtk.vala:94
+msgid "Unknown option"
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:172
+msgid "Lock"
+msgstr "Låsa"
+
+#: src/Gtk/MainWindow.vala:189
+msgid "Status"
+msgstr "Status"
+
+#: src/Gtk/MainWindow.vala:333
+msgid "Uninstall"
+msgstr "Avinstallera"
+
+#: src/Gtk/MainWindow.vala:339
+msgid "Changelog, build status, etc"
+msgstr "Ändringslogg, byggstatus, etc"
+
+#: src/Gtk/MainWindow.vala:348
+msgid "Uninstall Old"
+msgstr "Avinstallera Gamla"
+
+#: src/Gtk/MainWindow.vala:349
+msgid ""
+"Uninstall everything except:\n"
+"* the highest installed version\n"
+"* the currently running kernel\n"
+"* any kernels that are locked"
+msgstr ""
+"Avinstallera allt utom:\n"
+"* den högsta installerade versionen\n"
+"* den kärna som för närvarande körs\n"
+"* alla kärnor som är låsta"
+
+#: src/Gtk/MainWindow.vala:354
+msgid "Reload"
+msgstr "Reload"
+
+#: src/Gtk/MainWindow.vala:355
+msgid ""
+"Delete and reload all cached kernel info\n"
+"(the same as \"mainline --delete-cache\")"
+msgstr ""
+"Ta bort och ladda om all cachad kärninformation(samma som \"mainline --"
+"delete-cache\")"
+
+#: src/Gtk/MainWindow.vala:360
+msgid "Settings"
+msgstr "Inställningar"
+
+#: src/Gtk/MainWindow.vala:365
+msgid "About"
+msgstr "Om"
+
+#: src/Gtk/MainWindow.vala:370
+msgid "Exit"
+msgstr "Utgång"
+
+#: src/Gtk/MainWindow.vala:431
+msgid ""
+"A tool for installing kernel packages\n"
+"from the Ubuntu Mainline Kernels PPA"
+msgstr ""
+"Ett verktyg för att installera kärnpaket\n"
+"från Ubuntu Mainline Kernels PPA"
+
+#: src/Gtk/MainWindow.vala:433
+msgid "Original"
+msgstr "Original"
+
+#: src/Gtk/MainWindow.vala:434
+msgid "Forked"
+msgstr "Forked"
+
+#: src/Gtk/MainWindow.vala:444
+msgid "Updating Kernels..."
+msgstr ""
+
+#: src/Gtk/MainWindow.vala:502
+msgid "available"
+msgstr "tillgänglig"
+
+#: src/Gtk/SettingsWindow.vala:12
+msgid "Configuration"
+msgstr "Konfiguration"
+
+#: src/Gtk/SettingsWindow.vala:24
+msgid "Done"
+msgstr "Gjort"
+
+#: src/Gtk/SettingsWindow.vala:40
+msgid "Filter"
+msgstr "Filter"
+
+#: src/Gtk/SettingsWindow.vala:47
+msgid "Hide RC and unstable releases"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:54
+msgid "Hide failed or incomplete builds"
+msgstr "Dölj misslyckade eller ofullständiga builds"
+
+#: src/Gtk/SettingsWindow.vala:57
+#, c-format
+msgid ""
+"If a kernel version exists on the mainline-ppa site, but is an incomplete or "
+"failed build for your arch (%s), then don't show it in the list."
+msgstr ""
+"Om en kärnversion finns på mainline-ppa-webbplatsen, men är en ofullständig "
+"eller misslyckad konstruktion för din båge (%s), visa den inte i listan."
+
+#: src/Gtk/SettingsWindow.vala:63
+#, c-format
+msgid "Hide flavors other than %s"
+msgstr "Dölj andra smaker än %s"
+
+#: src/Gtk/SettingsWindow.vala:66
+#, c-format
+msgid "Don't show the alternative flavors such as %s and %s"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:80
+msgid "prior major versions  ( -1 = all )"
+msgstr "tidigare huvudversioner (-1 = alla)"
+
+#: src/Gtk/SettingsWindow.vala:88
+msgid "Notification"
+msgstr "Avisering"
+
+#: src/Gtk/SettingsWindow.vala:95
+msgid "Notify if a major release is available"
+msgstr "Meddela om en större version är tillgänglig"
+
+#: src/Gtk/SettingsWindow.vala:101
+msgid "Notify if a minor release is available"
+msgstr "Meddela om en mindre version är tillgänglig"
+
+#: src/Gtk/SettingsWindow.vala:108
+msgid "Seconds interval enabled for debugging"
+msgstr "Sekundintervall aktiverat för felsökning"
+
+#: src/Gtk/SettingsWindow.vala:127
+msgid "Check every"
+msgstr "Kontrollera varje"
+
+#: src/Gtk/SettingsWindow.vala:137
+msgid "Hours"
+msgstr "timmar"
+
+#: src/Gtk/SettingsWindow.vala:138
+msgid "Days"
+msgstr "dagar"
+
+#: src/Gtk/SettingsWindow.vala:139
+msgid "Weeks"
+msgstr "veckor"
+
+#: src/Gtk/SettingsWindow.vala:140
+msgid "Seconds"
+msgstr "sekunder"
+
+#: src/Gtk/SettingsWindow.vala:149
+msgid "Network"
+msgstr "Nätverk"
+
+#: src/Gtk/SettingsWindow.vala:159
+msgid "Connection Timeout:"
+msgstr "Timeout för anslutning:"
+
+#: src/Gtk/SettingsWindow.vala:167
+msgid "seconds"
+msgstr "sekunder"
+
+#: src/Gtk/SettingsWindow.vala:175
+msgid "Concurrent Downloads:"
+msgstr "Samtidiga nedladdningar:"
+
+#: src/Gtk/SettingsWindow.vala:185
+msgid "Verify Checksums"
+msgstr "Verifiera kontrollsummor"
+
+#: src/Gtk/SettingsWindow.vala:188
+msgid ""
+"Use the sha-256 hashes from the CHECKSUMS file to verify the *.deb file "
+"downloads."
+msgstr ""
+"Använd sha-256-hasharna från CHECKSUMS-filen för att verifiera "
+"nedladdningarna av *.deb-filen."
+
+#: src/Gtk/SettingsWindow.vala:192
+msgid "Keep Debs"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:195
+msgid ""
+"Retain downloaded *.deb files after install and re-use them for uninstall/"
+"reinstall instead of downloading again."
+msgstr ""
+"Behåll nedladdade .deb-filer efter installationen och återanvänd dem för "
+"avinstallation/ominstallation istället för att ladda ner igen."
+
+#: src/Gtk/SettingsWindow.vala:197
+msgid ""
+"They are still deleted once they become older than the \"prior major "
+"versions\" setting, or if they have been updated on the mainline-ppa site."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:203
+msgid "Keep Cache"
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:206
+msgid ""
+"Don't trim the cached index.html files to just the installed versions and "
+"higher, instead essentially maintain a local mirror of the entire history "
+"from the mainline-ppa site."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:208
+msgid ""
+"This speeds up some things a little at the cost of about 20M of hard drive "
+"space."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:209
+msgid ""
+"It skips a step on every startup that loops through all known kernel "
+"versions just to see if there are any old ones to delete, and avoids "
+"deleting and re-downloading the same files if you change the \"prior major "
+"versions\" setting up and down."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:211
+msgid "As of 6.5.x a full cache is about 22M, and a trimmed cache is about 2M."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:217
+msgid "Proxy"
+msgstr "Proxyserver"
+
+#: src/Gtk/SettingsWindow.vala:229
+msgid "Mainline-PPA URL"
+msgstr "Mainline-PPA URL"
+
+#: src/Gtk/SettingsWindow.vala:249
+msgid "External Commands"
+msgstr "Externa Kommandon"
+
+#: src/Gtk/SettingsWindow.vala:256
+msgid "Superuser Authorization"
+msgstr "Auktorisering Superanvändare"
+
+#: src/Gtk/SettingsWindow.vala:278
+msgid "Command used to run dpkg with root permissions."
+msgstr "Kommando som används för att köra dpkg med root-behörigheter."
+
+#: src/Gtk/SettingsWindow.vala:280
+#, no-c-format
+msgid "The dpkg command is appended to the end, unless a %s is present."
+msgstr "Kommandot dpkg läggs till i slutet, såvida inte %s finns."
+
+#: src/Gtk/SettingsWindow.vala:281
+#, no-c-format
+msgid "If a %s is present, then the %s is replaced with the dpkg command."
+msgstr "Om det finns en %s ersätts %s med kommandot dpkg."
+
+#: src/Gtk/SettingsWindow.vala:282 src/Gtk/SettingsWindow.vala:315
+msgid "The built-in list contains examples of both."
+msgstr "Den inbyggda listan innehåller exempel på båda."
+
+#: src/Gtk/SettingsWindow.vala:284 src/Gtk/SettingsWindow.vala:321
+msgid ""
+"To modify any of the built-in default commands, just select it and edit."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:285 src/Gtk/SettingsWindow.vala:322
+msgid ""
+"The edited command is saved in the config file, the original is not changed."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:289
+msgid "Terminal Window"
+msgstr "Terminalfönster"
+
+#: src/Gtk/SettingsWindow.vala:311
+msgid "Terminal command used to run"
+msgstr "Terminalkommando som används för att köra"
+
+#: src/Gtk/SettingsWindow.vala:313
+#, no-c-format
+msgid ""
+"The install/uninstall command is appended to the end, unless a %s is present."
+msgstr ""
+"Kommandot install/uninstall läggs till i slutet, såvida det inte finns ett "
+"%s."
+
+#: src/Gtk/SettingsWindow.vala:314
+#, no-c-format
+msgid ""
+"If a %s is present, then the %s is replaced with the install/uninstall "
+"command."
+msgstr "Om det finns en %s ersätts %s med kommandot install/install."
+
+#: src/Gtk/SettingsWindow.vala:317
+msgid ""
+"The terminal program must stay in the foreground and block while the command "
+"is running, not fork and return immediately."
+msgstr ""
+"Terminalprogrammet måste stanna i förgrunden och blockera medan kommandot "
+"körs, inte gaffel och returnera omedelbart."
+
+#: src/Gtk/SettingsWindow.vala:318
+msgid ""
+"Most terminal programs block by default, some require special commandline "
+"options."
+msgstr ""
+
+#: src/Gtk/SettingsWindow.vala:319
+#, c-format
+msgid "For example, %s requires \"%s\"."
+msgstr ""
+
+#: src/Gtk/TerminalWindow.vala:130
+msgid "Copy"
+msgstr "Kopiera"
+
+#: src/Gtk/TerminalWindow.vala:138
+msgid ""
+"Copies the entire output buffer, including scrollback, to the clipboard."
+msgstr "Kopierar hela utdatabufferten, inklusive scrollback, till urklipp."
+
+#: src/Gtk/TerminalWindow.vala:145
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/Gtk/TerminalWindow.vala:153
+msgid "Close"
+msgstr "Stäng"
